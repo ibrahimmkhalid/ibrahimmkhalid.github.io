@@ -1,1 +1,423 @@
+<<<<<<< HEAD
 Hello World
+=======
+<!DOCTYPE >
+<html>
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              mono: ['"Fira Mono"', "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-mono">
+    <div class="flex min-h-[100dvh] flex-col" id="top">
+      <header
+        class="sticky top-0 h-14 flex items-center px-4 lg:px-6 bg-white"
+        id="#"
+      >
+        <span
+          class="underline-offset-4 text-sm font-medium hover:underline"
+          onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'})"
+          >Ibrahim Khalid</span
+        >
+        <nav class="ml-auto flex gap-4 sm:gap-6">
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})"
+            >Experience</span
+          >
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})"
+            >Skills</span
+          >
+        </nav>
+      </header>
+      <main class="mx-auto flex flex-col items-center">
+        <section class="h-full w-full py-12 md:py-24 lg:py-32 xl:py-48">
+          <div class="container bg-white px-4 md:px-6" id="about">
+            <div
+              class="item flex gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]"
+            >
+              <div class="flex h-full w-full flex-col space-y-4 md:w-1/2">
+                <div class="space-y-2">
+                  <h1
+                    class="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                  >
+                    Ibrahim Khalid
+                  </h1>
+                  <h2 class="text-xl font-medium">Software Engineer</h2>
+                  <p class="max-w-[600px] md:text-lg">
+                    I am a general purpose software engineer with a passion for
+                    building tools that make my life, and others, easier. I have
+                    experience in many different areas of software development,
+                    from web development to systems programming. Currently, I am
+                    studying as a Master's student at San Jose State University,
+                    where I am pursuing a degree in Data Analytics. I am always
+                    looking for new opportunities to learn and grow as a
+                    software engineer.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                  <a
+                    href="https://drive.google.com/file/d/19qmTRpP0RprfNma2gAVtgAg8XbIYtNOv"
+                    class="border h-10 w-full items-center justify-center rounded-md px-4 py-2 text-center sm:w-1/3 bg-gray-900 text-white hover:bg-gray-100&quot;"
+                    >Resume</a
+                  >
+                  <a
+                    href="https://github.com/ibrahimmkhalid"
+                    class="border h-10 w-full items-center justify-center rounded-md px-4 py-2 text-center sm:w-1/3 bg-gray-100 hover:bg-gray-200&quot;"
+                    >GitHub</a
+                  >
+                  <a
+                    href="https://linkedin.com/in/ibrahimmkhalid"
+                    class="border h-10 w-full items-center justify-center rounded-md px-4 py-2 text-center sm:w-1/3 bg-gray-100 hover:bg-gray-200&quot;"
+                    >LinkedIn</a
+                  >
+                  <a
+                    href="mailto:ibrahimmkhalid@gmail.com"
+                    class="border h-10 w-full items-center justify-center rounded-md px-4 py-2 text-center sm:w-1/3 bg-gray-100 hover:bg-gray-200&quot;"
+                    >Email</a
+                  >
+                </div>
+              </div>
+              <div class="flex h-full w-full flex-col space-y-4 md:w-1/2">
+                <div class="space-y-2">
+                  <h2
+                    class="text-2xl tracking-tighter sm:text-4xl xl:text-5xl/none"
+                  >
+                    Recent Blogs
+                  </h2>
+                </div>
+                <div class="flex flex-col gap-2 min-[400px]:flex-row">
+                  <ul>
+                    <li>
+                      <a
+                        class="h-10 w-full items-center underline hover:text-blue-700"
+                        href="#"
+                      >
+                        <h3 class="text-xl">
+                          <span class="font-bold">Hello World</span>
+                          <span class="font-thin"> (1998-01-28)</span>
+                        </h3>
+                        <p>My first blog post</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full bg-gray-100 py-12 md:py-24 lg:py-32">
+          <div class="container px-4 md:px-6" id="experience">
+            <div
+              class="flex flex-col items-center justify-center space-y-4 text-center"
+            >
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Work Experience
+                </h2>
+                <p
+                  class="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Explore my professional background and the projects I've
+                  contributed to.
+                </p>
+              </div>
+            </div>
+            <div
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12"
+            >
+              <div class="flex flex-col justify-center space-y-4">
+                <ul class="grid gap-6">
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Backend Developer</h3>
+                      <p>Acme Inc. | 2019 - Present</p>
+                      <p>
+                        Designed and implemented scalable backend systems using
+                        Python, Django, and PostgreSQL. Optimized database
+                        queries and implemented caching strategies to improve
+                        application performance.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="grid gap-1">
+                      <h3 class="text-xl font-bold">Software Engineer</h3>
+                      <p>XYZ Corp. | 2016 - 2019</p>
+                      <p>
+                        Developed and maintained backend services using Node.js
+                        and MongoDB. Collaborated with frontend teams to ensure
+                        seamless integration and optimal user experience.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32">
+          <div
+            class="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10"
+            id="skills"
+          >
+            <div class="space-y-2">
+              <div class="space-y-2">
+                <h2
+                  class="text-3xl font-bold tracking-tighter md:text-4xl/tight"
+                >
+                  Selected Projects
+                </h2>
+                <p
+                  class="max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Explore some of the projects I've worked on.
+                </p>
+              </div>
+              <div
+                class="border bg-card text-card-foreground rounded-lg shadow-sm"
+                data-v0-t="card"
+              >
+                <div class="space-y-1.5 flex flex-col p-6">
+                  <h3
+                    class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+                  >
+                    Scalable API Service
+                  </h3>
+                  <p class="text-muted-foreground text-sm">
+                    Designed and implemented a highly scalable and performant
+                    API service using Node.js, Express.js, and MongoDB.
+                    Implemented caching, rate limiting, and authentication to
+                    ensure reliability and security.
+                  </p>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        Node.js
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        Express.js
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        MongoDB
+                      </div>
+                    </div>
+                    <a
+                      class="h-9 shadow hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors disabled:pointer-events-none disabled:opacity-50"
+                      href="#"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border bg-card text-card-foreground rounded-lg shadow-sm"
+                data-v0-t="card"
+              >
+                <div class="space-y-1.5 flex flex-col p-6">
+                  <h3
+                    class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+                  >
+                    Serverless Data Pipeline
+                  </h3>
+                  <p class="text-muted-foreground text-sm">
+                    Developed a serverless data pipeline using AWS Lambda, S3,
+                    Kinesis, and Athena to ingest, process, and analyze large
+                    datasets in real-time. Implemented monitoring and alerting
+                    to ensure reliable data delivery.
+                  </p>
+                </div>
+                <div class="p-6">
+                  <div
+                    class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center"
+                  >
+                    <div class="flex items-center space-x-2">
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        AWS Lambda
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        AWS S3
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        AWS Kinesis
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        AWS Athena
+                      </div>
+                    </div>
+                    <a
+                      class="h-9 shadow hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors disabled:pointer-events-none disabled:opacity-50"
+                      href="#"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border bg-card text-card-foreground rounded-lg shadow-sm"
+                data-v0-t="card"
+              >
+                <div class="space-y-1.5 flex flex-col p-6">
+                  <h3
+                    class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+                  >
+                    Distributed Microservices
+                  </h3>
+                  <p class="text-muted-foreground text-sm">
+                    Designed and implemented a distributed microservices
+                    architecture using Go, gRPC, and Kubernetes. Implemented
+                    service discovery, load balancing, and fault tolerance to
+                    ensure high availability and scalability.
+                  </p>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2">
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        Go
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        gRPC
+                      </div>
+                      <div
+                        class="w-fit border px-2.5 py-0.5 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 bg-secondary text-secondary-foreground hover:bg-secondary/80 inline-flex items-center whitespace-nowrap rounded-full border-transparent text-xs font-semibold transition-colors"
+                        data-v0-t="badge"
+                      >
+                        Kubernetes
+                      </div>
+                    </div>
+                    <a
+                      class="h-9 shadow hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 inline-flex items-center justify-center rounded-md bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors disabled:pointer-events-none disabled:opacity-50"
+                      href="#"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="border bg-card text-card-foreground rounded-lg shadow-sm"
+                data-v0-t="card"
+              >
+                <div class="space-y-1.5 flex flex-col p-6">
+                  <h3
+                    class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight"
+                  >
+                    Real-time Data Processing
+                  </h3>
+                  <p class="text-muted-foreground text-sm">
+                    Developed a real-time data processing pipeline using Python,
+                    Apache Kafka, and Elasticsearch. Implemented data
+                    transformation, enrichment, and indexing to enable
+                    near-real-time analytics and search capabilities.
+                  </p>
+                </div>
+                <div class="p-6">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="space-y-2">
+                <h2
+                  class="text-3xl font-bold tracking-tighter md:text-4xl/tight"
+                >
+                  Technical Skills
+                </h2>
+                <p
+                  class="max-w-[600px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                >
+                  Proficient in a wide range of backend technologies and
+                  methodologies.
+                </p>
+              </div>
+              <div class="rounded-lg bg-gray-100 p-4">
+                <h3 class="text-lg font-bold">Languages</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>Python</li>
+                  <li>Node.js</li>
+                  <li>Go</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="rounded-lg bg-gray-100 p-4">
+                <h3 class="text-lg font-bold">Frameworks</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>Django</li>
+                  <li>Express.js</li>
+                  <li>Gin</li>
+                  <li>FastAPI</li>
+                </ul>
+              </div>
+              <div class="rounded-lg bg-gray-100 p-4">
+                <h3 class="text-lg font-bold">Databases</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Redis</li>
+                  <li>Elasticsearch</li>
+                </ul>
+              </div>
+              <div class="rounded-lg bg-gray-100 p-4">
+                <h3 class="text-lg font-bold">Cloud</h3>
+                <ul class="mt-2 space-y-1">
+                  <li>AWS</li>
+                  <li>Google Cloud</li>
+                  <li>Kubernetes</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
+>>>>>>> 574c613 (initial)
