@@ -4,11 +4,24 @@ Hello World
 <!DOCTYPE >
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+      integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+      integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+      crossorigin="anonymous"
+    ></script>
     <title>Home</title>
     <script>
       tailwind.config = {
@@ -24,23 +37,140 @@ Hello World
   </head>
   <body class="font-mono">
     <div class="flex min-h-[100dvh] flex-col" id="top">
-      <header class="sticky top-0 h-14 flex items-center px-4 lg:px-6 bg-white" id="#" >
-        <span class="underline-offset-4 text-sm font-medium hover:underline" onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'})" >Ibrahim Khalid</span >
-        <nav class="ml-auto flex gap-4 sm:gap-6">
-          <span class="underline-offset-4 text-sm font-medium hover:underline" onclick="document.getElementById('recent-blogs').scrollIntoView({behavior: 'smooth'})" >Recent Blogs</span >
-          <span class="underline-offset-4 text-sm font-medium hover:underline" onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})" >Experience</span >
-          <span class="underline-offset-4 text-sm font-medium hover:underline" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})" >Skills</span >
-          <span class="underline-offset-4 text-sm font-medium hover:underline" onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})" >Selected Projects</span >
+      <header
+        class="sticky top-0 h-14 flex items-center px-4 lg:px-6 bg-white"
+        id="#"
+      >
+        <span
+          class="underline-offset-4 text-sm font-medium hover:underline items-center"
+          onclick="document.getElementById('top').scrollIntoView({behavior: 'smooth'})"
+        >
+          <i class="fas fa-code"></i>
+          Ibrahim Khalid
+        </span>
+        <nav class="ml-auto gap-4 sm:gap-6 hidden md:flex">
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('recent-blogs').scrollIntoView({behavior: 'smooth'})"
+            >Recent Blogs</span
+          >
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})"
+            >Experience</span
+          >
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})"
+            >Skills</span
+          >
+          <span
+            class="underline-offset-4 text-sm font-medium hover:underline"
+            onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"
+            >Selected Projects</span
+          >
         </nav>
+        <div class="ml-auto gap-4 sm:gap-6 md:hidden">
+          <div
+            class="flex hover:cursor-pointer"
+            id="burger-menu-button"
+            onclick="toggleMenu()"
+          >
+            <i class="fas fa-bars"></i>
+          </div>
+          <div
+            class="hidden w-full h-full flex flex-col items-center justify-center bg-white z-30 absolute left-0 top-0"
+            style="height: 100vh; width: 100vw"
+            id="burger-menu"
+            onclick="toggleMenu()"
+          >
+            <div
+              class="underline-offset-4 text-sm font-medium hover:underline py-4"
+              onclick="document.getElementById('recent-blogs').scrollIntoView({behavior: 'smooth'})"
+            >
+              bbbbbbbbbbbb
+            </div>
+            <div
+              class="underline-offset-4 text-sm font-medium hover:underline py-4"
+              onclick="document.getElementById('experience').scrollIntoView({behavior: 'smooth'})"
+            >
+              bbbbbbbbbbbb
+            </div>
+            <div
+              class="underline-offset-4 text-sm font-medium hover:underline py-4"
+              onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})"
+            >
+              bbbbbb
+            </div>
+            <div
+              class="underline-offset-4 text-sm font-medium hover:underline py-4"
+              onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})"
+            >
+              bbbbbb bbbbbbb
+            </div>
+          </div>
+        </div>
       </header>
       <main class="mx-auto flex flex-col items-center">
-        <section class="h-full w-full py-12 md:py-24 lg:py-32 xl:py-48" ></section>
-        <section class="h-full bg-gray-100 w-full py-12 md:py-24 lg:py-32 xl:py-48" ></section>
-        <section class="w-full py-12 md:py-24 lg:py-32"></section>
-        <section class="w-full bg-gray-100 py-12 md:py-24 lg:py-32"></section>
-        <section class="w-full py-12 md:py-24 lg:py-32"></section>
+        <section class="h-full w-full py-12 md:py-24 lg:py-32 xl:py-48">
+          <h1>Hi!</h1>
+        </section>
+        <section
+          class="h-full bg-gray-100 w-full py-12 md:py-24 lg:py-32 xl:py-48"
+          id="recent-blogs"
+        >
+          <h1>Recent Blogs</h1>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32" id="experience">
+          <h1>Experience</h1>
+        </section>
+        <section class="w-full bg-gray-100 py-12 md:py-24 lg:py-32" id="skills">
+          <h1>Skills</h1>
+        </section>
+        <section class="w-full py-12 md:py-24 lg:py-32" id="projects">
+          <h1>Selected Projects</h1>
+        </section>
       </main>
     </div>
   </body>
+  <script>
+    // control width check
+    // 768px is the tailwindcss breakpoint for md:
+    visualViewport.addEventListener("resize", () => {
+      if (
+        visualViewport.width > 768 &&
+        (document.ib_width === undefined || document.ib_width === "small")
+      ) {
+        document.ib_width = "large";
+      } else if (
+        visualViewport.width <= 768 &&
+        (document.ib_width === undefined || document.ib_width === "large")
+      ) {
+        document.ib_width = "small";
+      }
+
+      if (document.ib_menu === true) {
+        document.ib_menu = false;
+        var menu = document.getElementById("burger-menu");
+        var button = document.getElementById("burger-menu-button");
+        menu.classList.add("hidden");
+        button.classList.remove("z-40");
+      }
+    });
+
+    function toggleMenu() {
+      var menu = document.getElementById("burger-menu");
+      var button = document.getElementById("burger-menu-button");
+      if (document.ib_menu === true) {
+        document.ib_menu = false;
+        menu.classList.add("hidden");
+        button.classList.remove("z-40");
+      } else {
+        document.ib_menu = true;
+        menu.classList.remove("hidden");
+        button.classList.add("z-40");
+      }
+    }
+  </script>
 </html>
 >>>>>>> 574c613 (initial)
