@@ -3,6 +3,8 @@
     "start": "browser-sync start -s -f . --no-notify"
   },
   "devDependencies": {
-    "browser-sync": "^3.0.2"
+    "browser-sync": "^3.0.2",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5"
   }
 }
