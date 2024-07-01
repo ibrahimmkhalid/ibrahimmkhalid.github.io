@@ -5,7 +5,44 @@ const tabs = [
   { name: "Selected Projects", id: "projects" },
 ];
 
-export const Header = () => (
+function onMount() {
+  visualViewport.addEventListener("resize", () => {
+    console.log(1234);
+    if (visualViewport.width > 768 && (document.ib_width === undefined || document.ib_width === "small")) {
+      document.ib_width = "large";
+    } else if (visualViewport.width <= 768 && (document.ib_width === undefined || document.ib_width === "large")) {
+      document.ib_width = "small";
+    }
+
+    if (document.ib_menu === true) {
+      document.ib_menu = false;
+      var menu = document.getElementById("burger-menu");
+      var button = document.getElementById("burger-menu-button");
+      menu.classList.add("hidden");
+      menu.classList.remove("flex");
+      button.classList.remove("z-40");
+    }
+  });
+}
+
+function toggleMenu() {
+  console.log(7098);
+  var menu = document.getElementById("burger-menu");
+  var button = document.getElementById("burger-menu-button");
+  if (document.ib_menu === true) {
+    document.ib_menu = false;
+    menu.classList.add("hidden");
+    menu.classList.remove("flex");
+    button.classList.remove("z-40");
+  } else {
+    document.ib_menu = true;
+    menu.classList.add("flex");
+    menu.classList.remove("hidden");
+    button.classList.add("z-40");
+  }
+}
+
+const Header = () => (
   <>
     <header className="sticky top-0 flex h-14 items-center bg-white px-4 lg:px-6" id="#">
       <span
@@ -57,3 +94,7 @@ export const Header = () => (
     </header>
   </>
 );
+
+const HeaderJS = { onMount, toggleMenu };
+
+export { Header, HeaderJS };
