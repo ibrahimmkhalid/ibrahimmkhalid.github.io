@@ -2,3 +2,4 @@ node_modules/
 package-lock.json
 styles.css
 public/
+src/**/blogs/**/index-page.jsx

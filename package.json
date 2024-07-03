@@ -1,10 +1,11 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css && npx nakedjsx src --out public",
+    "build": "node ./scripts/md-to-html.js && npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css && npx nakedjsx src --out public",
     "build:watch:css": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css --watch",
-    "build:watch:nakedjsx": "npx nakedjsx src --out public --dev",
+    "build:watch:nakedjsx": "npx nakedjsx src --out public --dev --pretty",
+    "build:watch:showdown": "(find scripts blogs -type f && find . -maxdepth 1 -type f) | entr node ./scripts/md-to-html.js",
     "serve": "browser-sync start -s public -f . --no-notify",
-    "start": "concurrently \"npm run build:watch:css\"  \"npm run build:watch:nakedjsx\" \"npm run serve\""
+    "start": "concurrently \"npm run build:watch:css\"  \"npm run build:watch:showdown\" \"npm run build:watch:nakedjsx\" \"npm run serve\""
   },
   "devDependencies": {
     "browser-sync": "^3.0.2",
@@ -12,6 +13,7 @@
     "nakedjsx": "^0.14.6",
     "prettier": "^3.3.2",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "showdown": "^2.1.0",
     "tailwindcss": "^3.4.4"
   }
 }
