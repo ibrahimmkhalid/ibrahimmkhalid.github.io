@@ -1,4 +1,9 @@
 const showdown = require("showdown");
+const fs = require("fs");
+const path = require("path");
+
+const basePath = "./blogs/";
+const outPath = "./src/blogs/";
 
 var unescapeStuff = [
   {
@@ -36,10 +41,6 @@ converter.setOption("backslashEscapesHTMLTags", true);
 converter.setOption("metadata", true);
 converter.setOption("headerLevelStart", 2);
 
-const fs = require("fs");
-const path = require("path");
-const basePath = "./blogs/";
-const outPath = "./src/blogs/";
 var allBlogs;
 try {
   allBlogs = fs.readdirSync(basePath);
@@ -71,6 +72,13 @@ var elements = [
 ];
 
 allBlogs.forEach((blog) => {
+  var blogSitePath = outPath + blog + "/index-page.jsx";
+  if (fs.existsSync(blogSitePath)) {
+    if (process.argv[2] != blog) {
+      console.log("Blog " + blog + " already exists");
+      return;
+    }
+  }
   var blogTemplate = template.toString();
   var blogBasePath = basePath + blog + "/";
   var blogContentPath = blogBasePath + "content.md";
@@ -84,7 +92,6 @@ allBlogs.forEach((blog) => {
     blogTemplate = blogTemplate.replaceAll(element.from, element.to);
   });
   try {
-    var blogSitePath = outPath + blog + "/index-page.jsx";
     const directory = path.dirname(blogSitePath);
     if (!fs.existsSync(directory)) {
       console.log("Making directory");
