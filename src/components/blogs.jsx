@@ -2,7 +2,7 @@ export const Blogs = ({ count = -1 }) => {
   var blogs = [
     //TODO: make dynamic with actual blog files
     { title: "Hello World", date: "1998-01-28", tagline: "My first blog post", link: "/blogs/hello-world" },
-    { title: "Hello Forld", date: "1999-01-28", tagline: "My secod blog post", link: "/blogs/bello-borld" },
+    { title: "Hello Forld", date: "1999-01-28", tagline: "My secod blog post", link: "#" },
     { title: "Hello Borld", date: "2000-01-28", tagline: "My becondf blog post", link: "#" },
     { title: "Hello Qorld", date: "2002-01-28", tagline: "My last blog post", link: "#" },
   ];
