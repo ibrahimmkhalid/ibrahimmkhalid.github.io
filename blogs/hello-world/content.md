@@ -225,6 +225,10 @@ delimiters need to be indented:
 To put a code block within a list item, the code block needs
 to be indented _twice_ -- 8 spaces or two tabs:
 
+- A list item with a code block:
+
+      <code goes here>
+
 ### Code Blocks
 
 Pre-formatted code blocks are used for writing about programming or
