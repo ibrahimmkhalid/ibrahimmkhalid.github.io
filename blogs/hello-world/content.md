@@ -1,13 +1,13 @@
 ---
 title: Hello World
 date: 2024-07-03
- ---
+---
 
 Ahem...
 
 # Hello World!
 
-\**Look, he said the thing*\*
+\*_Look, he said the thing_\*
 
 ...
 
