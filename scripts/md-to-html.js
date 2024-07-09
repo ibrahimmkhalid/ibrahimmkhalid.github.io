@@ -4,6 +4,7 @@ const path = require("path");
 
 const basePath = "./blogs/";
 const outPath = "./src/blogs/";
+const blogJsxPath = "./src/components/blogs.jsx";
 
 var unescapeStuff = [
   {
@@ -42,6 +43,7 @@ converter.setOption("metadata", true);
 converter.setOption("headerLevelStart", 2);
 
 var allBlogs;
+var blogLinks = [];
 try {
   allBlogs = fs.readdirSync(basePath);
 } catch (err) {
@@ -73,12 +75,6 @@ var elements = [
 
 allBlogs.forEach((blog) => {
   var blogSitePath = outPath + blog + "/index-page.jsx";
-  if (fs.existsSync(blogSitePath)) {
-    if (process.argv[2] != blog) {
-      console.log("Blog " + blog + " already exists");
-      return;
-    }
-  }
   var blogTemplate = template.toString();
   var blogBasePath = basePath + blog + "/";
   var blogContentPath = blogBasePath + "content.md";
@@ -86,6 +82,18 @@ allBlogs.forEach((blog) => {
   var blogContentText = fs.readFileSync(blogContentPath, "utf8");
   var blogContentHTML = converter.makeHtml(blogContentText);
   var blogContentMeta = converter.getMetadata();
+  blogLinks.push({
+    date: new Date(blogContentMeta.date),
+    link: blogSitePath.slice(5, -15),
+    tagline: blogContentMeta.tagline,
+    title: blogContentMeta.title,
+  });
+  if (fs.existsSync(blogSitePath)) {
+    if (process.argv[2] != blog) {
+      console.log("Blog " + blog + " already exists");
+      return;
+    }
+  }
   blogTemplate = blogTemplate.replaceAll("|||title|||", blogContentMeta.title);
   blogTemplate = blogTemplate.replace("|||content|||", blogContentHTML);
   elements.forEach((element) => {
@@ -110,6 +118,26 @@ allBlogs.forEach((blog) => {
     });
     console.error(error);
   }
+
   console.log();
 });
+blogLinks.sort((a, b) => b.date - a.date);
+blogLinks = blogLinks.map((a) => {
+  a.date = a.date.toISOString().substring(0, 10);
+  return a;
+});
+blogLinks = JSON.stringify(blogLinks).slice(1, -1);
+try {
+  var blogJsx = fs.readFileSync(blogJsxPath, "utf8");
+  var marker = "////";
+  var regex = new RegExp(marker + "[\\s\\S]*?" + marker);
+  blogJsx = blogJsx.replace(regex, marker + "\n" + blogLinks + "\n" + marker);
+  fs.writeFileSync(blogJsxPath, blogJsx);
+  console.log("updated blog list");
+} catch (error) {
+  console.error({
+    blogJsxPath,
+  });
+  console.error(error);
+}
 console.log("done");
