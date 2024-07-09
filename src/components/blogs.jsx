@@ -16,7 +16,7 @@ export const Blogs = ({ count = -1 }) => {
         </>
       ) : (
         <>
-          <h1 className="text-4xl font-bold underline">Recent Blogs</h1>
+          <h1 className="text-4xl font-bold underline">All Blogs</h1>
         </>
       )}
       <h2 className="pb-4 text-xl text-gray-600">Just some random thoughts I have had recently...</h2>
