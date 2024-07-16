@@ -3,17 +3,25 @@ import { Header } from "./components/header.jsx";
 import { Blogs } from "./components/blogs.jsx";
 import { Experience } from "./components/experience.jsx";
 
+const isBuild = true;
+
 const BodyContent = () => (
   <>
     <div className="font-mono">
       <Header />
       <div className="flex flex-col" id="top">
         <main className="flex flex-col items-center px-4">
-          <div className="m-4 rounded-full border-8 border-red-500 p-4">
-            (Page experience still being built...)
-            <br />
-            If you found this page, please explore the buttons just below
-          </div>
+          {isBuild ? (
+            <>
+              <div className="m-4 rounded-full border-8 border-red-500 p-4">
+                (Page experience still being built...)
+                <br />
+                If you found this page, please explore the buttons just below
+              </div>
+            </>
+          ) : (
+            <></>
+          )}
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24">
             <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
             <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
