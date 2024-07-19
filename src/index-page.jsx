@@ -2,6 +2,7 @@ import { Page } from "@nakedjsx/core/page";
 import { Header } from "./components/header.jsx";
 import { Blogs } from "./components/blogs.jsx";
 import { Experience } from "./components/experience.jsx";
+import { Education } from "./components/education.jsx";
 
 const isBuild = true;
 
@@ -67,6 +68,9 @@ const BodyContent = () => (
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="experience">
             <Experience />
+          </section>
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="education">
+            <Education />
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="skills">
             <h1 className="text-2xl font-bold">Skills</h1>

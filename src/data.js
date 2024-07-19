@@ -3,7 +3,7 @@
  * @property {string} title - The title of the position.
  * @property {string} where - The name of the company.
  * @property {string} from - The start date of the position.
- * @property {string|boolean} to - The end date of the position.
+ * @property {string} to - The end date of the position.
  * @property {string[]} topSkills - An array of up to the top 3 skills used in the position.
  * @property {string[]} [links] - An array of links related to the position.
  * @property {string} [short] - A short description of the position.
@@ -46,4 +46,37 @@ const experiences = [
   },
 ];
 
-export { experiences };
+const education = [
+  {
+    title: "Master's of Science in Data Analytics",
+    where: "San Jose State University",
+    from: "Fall 2023",
+    to: "Current",
+    topSkills: ["Python", "Data Analytics", "Machine Learning"],
+    short:
+      "Current courses include Database systems for analytics, Machine Learning Technologies, and Big Data Technologies and Applications, providing a strong foundation for working on data and AI/ML projects.",
+    points: [
+      "Completed 6 courses out of a planned 11, growing a strong foundation for artificial intelligence and handling big data",
+      "Achieved top scores in multiple projects and assignments",
+      "assisted 10 peers in difficult tasks and lead team projects to completion",
+    ],
+    links: ["sjsu.edu"],
+  },
+  {
+    title: "Bachelors's of Science in Electrical Engineering",
+    where: "National University of Computer and Emerging Sciences",
+    from: "Fall 2017",
+    to: "Spring 2021",
+    topSkills: ["C/C++", "SQL", "Python", "Digital Design", "Assembly", "Electrical Engineering"],
+    short:
+      "Key courses studied, such as Data Structures and Algorithms, Applied Machine Learning, and Fundamentals of databases, established a foundation for efficient and optimized programming across various disciplines",
+    points: [
+      "Achieved Dean's Honor List Spring 2019, Member of local chapter IEEE Robotics Club",
+      "Top scorer in major courses, helped several fellow students on various topics",
+      "Coordinated and led multiple projects, including developing a traffic sign classifier, a web app using .NET framework nad MySQL, a room security solution using assembly, and multiple complex algorithms",
+    ],
+    links: ["lhr.nu.edu.pk"],
+  },
+];
+
+export { experiences, education };
