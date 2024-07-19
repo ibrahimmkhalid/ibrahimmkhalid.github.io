@@ -1,8 +1,6 @@
 const tabs = [
   { name: "Recent Blogs", id: "recent-blogs" },
   { name: "Experience", id: "experience" },
-  { name: "Skills", id: "skills" },
-  { name: "Selected Projects", id: "projects" },
 ];
 
 function onMount() {

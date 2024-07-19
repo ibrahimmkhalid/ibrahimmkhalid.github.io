@@ -4,7 +4,7 @@ import { Blogs } from "./components/blogs.jsx";
 import { Experience } from "./components/experience.jsx";
 import { Education } from "./components/education.jsx";
 
-const isBuild = true;
+const isBuild = false;
 
 const BodyContent = () => (
   <>
@@ -71,12 +71,6 @@ const BodyContent = () => (
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="education">
             <Education />
-          </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="skills">
-            <h1 className="text-2xl font-bold">Skills</h1>
-          </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="projects">
-            <h1 className="text-2xl font-bold">Selected Projects</h1>
           </section>
         </main>
       </div>
