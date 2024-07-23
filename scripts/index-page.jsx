@@ -8,7 +8,7 @@ const BodyContent = () => (
       <div className="flex flex-col" id="top">
         <main className="flex flex-col items-center px-4">
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24">
-            <h1 className="text-4xl font-bold underline"># |||title|||</h1>
+            <h1 className="text-3xl font-bold underline"># |||title|||</h1>
             <div>|||content|||</div>
           </section>
         </main>

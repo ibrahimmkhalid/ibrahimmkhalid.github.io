@@ -3,14 +3,14 @@ import { experiences } from "../data.js";
 export const Experience = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold">Experience</h1>
-      <h2 className="pb-4 text-xl text-gray-600">A list of my professional work experiences</h2>
-      <div className="flex flex-col gap-2 text-lg">
+      <h1 className="text-xl font-bold">Experience</h1>
+      <h2 className="pb-4 text-lg text-gray-600">A list of my professional work experiences</h2>
+      <div className="text-md flex flex-col gap-2">
         <div className="space-y-5">
           {experiences.map((experience) => {
             return (
               <div>
-                <div className="text-xl">
+                <div className="text-md">
                   <span className="font-bold">{experience.title}</span>
                   <span className="font-thin">
                     {", "} {experience.where} ({experience.from} to {experience.to})
@@ -51,7 +51,7 @@ export const Experience = () => {
                 ) : (
                   <></>
                 )}
-                <p className="text-md">{experience.tagline}</p>
+                <p className="text-sm">{experience.tagline}</p>
               </div>
             );
           })}

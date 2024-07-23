@@ -24,9 +24,9 @@ const BodyContent = () => (
             <></>
           )}
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24">
-            <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
-            <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
-            <p className="text-lg">
+            <h1 className="text-3xl font-bold">Ibrahim Khalid</h1>
+            <h2 className="pb-4 text-lg text-gray-600">Software Engineer</h2>
+            <p className="text-md">
               Dedicated software engineer with an interest in system software and tool development. I am pursuing a
               master’s degree in data Analytics at San Jose State University. Allowing me to use my skills in software
               engineering in tandem with emerging machine learning and AI technologies. Currently seeking software

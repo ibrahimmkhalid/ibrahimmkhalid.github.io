@@ -12,25 +12,25 @@ export const Blogs = ({ count = -1 }) => {
     <>
       {count > 0 ? (
         <>
-          <h1 className="text-2xl font-bold">Recent Blogs</h1>
+          <h1 className="text-xl font-bold">Recent Blogs</h1>
         </>
       ) : (
         <>
-          <h1 className="text-4xl font-bold underline">All Blogs</h1>
+          <h1 className="text-3xl font-bold underline">All Blogs</h1>
         </>
       )}
-      <h2 className="pb-4 text-xl text-gray-600">Just some random thoughts I have had recently...</h2>
+      <h2 className="pb-4 text-lg text-gray-600">Just some random thoughts I have had recently...</h2>
       <div className="flex flex-col gap-2">
         <ul className="space-y-5">
           {blogs.map((blog) => {
             return (
               <li>
                 <a className="h-10 w-full items-center underline hover:text-blue-800" href={blog.link}>
-                  <h3 className="text-lg">
+                  <h3 className="text-md">
                     <span className="font-bold">{blog.title}</span>
                     <span className="font-thin"> ({blog.date})</span>
                   </h3>
-                  <p className="text-md">{blog.tagline}</p>
+                  <p className="text-sm">{blog.tagline}</p>
                 </a>
               </li>
             );
@@ -38,7 +38,7 @@ export const Blogs = ({ count = -1 }) => {
         </ul>
         {count > 0 ? (
           <>
-            <a className="text-md h-10 w-full items-center underline hover:text-blue-800" href="/blogs">
+            <a className="h-10 w-full items-center text-sm underline hover:text-blue-800" href="/blogs">
               View all...
             </a>
           </>

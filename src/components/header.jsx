@@ -44,7 +44,7 @@ const Header = ({ isBlog = false }) => (
   <>
     <header className="sticky top-0 flex h-14 items-center bg-white px-4 lg:px-6" id="#">
       <span
-        className="items-center text-sm font-medium underline-offset-4 hover:underline"
+        className="items-center text-xs font-medium underline-offset-4 hover:underline"
         onClick={'window.scrollTo({top:0, behavior: "smooth"})'}
       >
         {isBlog ? (
@@ -70,7 +70,7 @@ const Header = ({ isBlog = false }) => (
               return (
                 <span
                   key={tab.id}
-                  className="text-sm font-medium underline-offset-4 hover:underline"
+                  className="text-xs font-medium underline-offset-4 hover:underline"
                   onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
                 >
                   {tab.name}
@@ -95,7 +95,7 @@ const Header = ({ isBlog = false }) => (
                 return (
                   <div
                     key={tab.id}
-                    className="my-4 rounded-md border-2 bg-gray-100 p-4 text-sm font-medium underline-offset-4 hover:cursor-pointer hover:underline"
+                    className="my-4 rounded-md border-2 bg-gray-100 p-4 text-xs font-medium underline-offset-4 hover:cursor-pointer hover:underline"
                     onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
                   >
                     {tab.name}
