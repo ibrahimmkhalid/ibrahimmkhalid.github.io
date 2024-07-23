@@ -44,7 +44,7 @@ export const Education = () => {
                   <>
                     <ul className="list-disc space-y-2">
                       {experience.points.map((p) => {
-                        return <li>{p}</li>;
+                        return <li className="ml-8">{p}</li>;
                       })}
                     </ul>
                   </>

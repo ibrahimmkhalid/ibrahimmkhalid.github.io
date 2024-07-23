@@ -29,17 +29,17 @@ const BodyContent = () => (
                 I have a couple of small project you can check out with varying degrees of coolness.
               </p>
               <ol className="list-decimal">
-                <li>
+                <li className="ml-8">
                   <a className="underline hover:text-blue-800" href="https://github.com/ibrahimmkhalid/ibkbd">
                     Keyboard stuff
                   </a>
                 </li>
-                <li>
+                <li className="ml-8">
                   <a className="underline hover:text-blue-800" href="https://github.com/ibrahimmkhalid/dotFiles">
                     Personal dot files
                   </a>
                 </li>
-                <li>
+                <li className="ml-8">
                   <a
                     className="underline hover:text-blue-800"
                     href="https://github.com/ibrahimmkhalid/llm-from-scratch"

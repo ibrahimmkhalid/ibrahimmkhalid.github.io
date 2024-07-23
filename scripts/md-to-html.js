@@ -61,6 +61,7 @@ var elements = [
   { from: "<hr ", to: '<hr className="h-1 my-4 bg-gray-100 border-0 rounded"' },
   { from: "<ol", to: '<ol className="list-decimal"' },
   { from: "<p>", to: '<p className="py-2">' },
+  { from: "<li>", to: '<li className="ml-8">' },
   {
     from: "<pre",
     to: '<pre className="bg-gray-100 border-1 border border-black p-1 block whitespace-pre overflow-x-scroll"',
