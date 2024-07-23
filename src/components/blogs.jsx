@@ -1,8 +1,8 @@
 export const Blogs = ({ count = -1 }) => {
   var blogs = [
     ////
-    { date: "2024-07-03", link: "/blogs/hello-world", tagline: "My first blogpost", title: "Hello World" },
-    ////
+{"date":"2024-07-22","link":"/blogs/unconventional-making-of-this-website","title":"The Unconventional Making of This Website"},{"date":"2024-07-03","link":"/blogs/hello-world","tagline":"My first blogpost","title":"Hello World"}
+////
   ];
   if (count > 0) {
     var totalCount = blogs.length;
