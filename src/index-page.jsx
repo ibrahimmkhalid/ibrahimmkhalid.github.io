@@ -8,7 +8,7 @@ const isBuild = false;
 
 const BodyContent = () => (
   <>
-    <div className="font-mono">
+    <div>
       <Header />
       <div className="flex flex-col" id="top">
         <main className="flex flex-col items-center px-4">
@@ -23,10 +23,10 @@ const BodyContent = () => (
           ) : (
             <></>
           )}
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24">
-            <h1 className="text-3xl font-bold">Ibrahim Khalid</h1>
-            <h2 className="pb-4 text-lg text-gray-600">Software Engineer</h2>
-            <p className="text-md">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24">
+            <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
+            <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
+            <p className="text-lg">
               Dedicated software engineer with an interest in system software and tool development. I am pursuing a
               master’s degree in data Analytics at San Jose State University. Allowing me to use my skills in software
               engineering in tandem with emerging machine learning and AI technologies. Currently seeking software
@@ -63,13 +63,13 @@ const BodyContent = () => (
               </div>
             </div>
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="recent-blogs">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="recent-blogs">
             <Blogs count={4} />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="experience">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="experience">
             <Experience />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24" id="education">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="education">
             <Education />
           </section>
         </main>
@@ -83,9 +83,6 @@ Page.AppendHead(<title>Ibrahim Khalid</title>);
 Page.AppendHead(<meta charset="UTF-8" />);
 Page.AppendHead(<meta name="viewport" content="width=device-width, initial-scale=1.0" />);
 Page.AppendHead(<link rel="stylesheet" href="./styles.css" />);
-Page.AppendHead(
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />,
-);
 Page.AppendHead(
   <script
     defer
