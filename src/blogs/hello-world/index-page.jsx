@@ -7,7 +7,7 @@ const BodyContent = () => (
       <Header isBlog />
       <div className="flex flex-col" id="top">
         <main className="flex flex-col items-center px-4">
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 lg:w-2/5 md:py-24">
             <h1 className="text-4xl font-bold underline"># Hello World</h1>
             <div>
               <p className="py-2">Ahem…</p>

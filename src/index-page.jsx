@@ -23,7 +23,7 @@ const BodyContent = () => (
           ) : (
             <></>
           )}
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 lg:w-2/5 md:py-24">
             <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
             <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
             <p className="text-lg">
@@ -63,13 +63,13 @@ const BodyContent = () => (
               </div>
             </div>
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="recent-blogs">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 lg:w-2/5 md:py-24" id="recent-blogs">
             <Blogs count={4} />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="experience">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 lg:w-2/5 md:py-24" id="experience">
             <Experience />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-2/5 md:py-24" id="education">
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 lg:w-2/5 md:py-24" id="education">
             <Education />
           </section>
         </main>
