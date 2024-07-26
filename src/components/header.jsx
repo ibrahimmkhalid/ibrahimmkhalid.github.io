@@ -5,7 +5,6 @@ const tabs = [
 
 function onMount() {
   visualViewport.addEventListener("resize", () => {
-    console.log(1234);
     if (visualViewport.width > 768 && (document.ib_width === undefined || document.ib_width === "small")) {
       document.ib_width = "large";
     } else if (visualViewport.width <= 768 && (document.ib_width === undefined || document.ib_width === "large")) {
@@ -24,7 +23,6 @@ function onMount() {
 }
 
 function toggleMenu() {
-  console.log(7098);
   var menu = document.getElementById("burger-menu");
   var button = document.getElementById("burger-menu-button");
   if (document.ib_menu === true) {
