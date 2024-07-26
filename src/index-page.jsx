@@ -6,6 +6,27 @@ import { Education } from "./components/education.jsx";
 
 const isBuild = false;
 
+const quickLinks = [
+  {
+    name: "Resume",
+    link: "https://drive.google.com/file/d/19qmTRpP0RprfNma2gAVtgAg8XbIYtNOv/view?usp=drive_link",
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/ibrahimmkhalid",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/ibrahimmkhalid",
+  },
+  {
+    name: "Email",
+    link: "mailto:ibrahimmkhalid@gmail.com",
+  },
+];
+
+var firstQuickLink = true;
+
 const BodyContent = () => (
   <>
     <div>
@@ -32,35 +53,21 @@ const BodyContent = () => (
               engineering in tandem with emerging machine learning and AI technologies. Currently seeking software
               engineering positions that focus on tool/system engineering or backend development.
             </p>
-            <div className="flex flex-col pt-4 md:grid md:grid-cols-4">
-              <div className="mx-0 my-1 md:mx-1 md:my-0">
-                <a href="https://drive.google.com/file/d/19qmTRpP0RprfNma2gAVtgAg8XbIYtNOv/view?usp=drive_link">
-                  <p className="h-10 w-full items-center justify-center rounded-md border bg-gray-800 px-4 py-2 text-center text-white">
-                    Resume
-                  </p>
-                </a>
-              </div>
-              <div className="mx-0 my-1 md:mx-1 md:my-0">
-                <a href="https://github.com/ibrahimmkhalid">
-                  <p className="h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center">
-                    GitHub
-                  </p>
-                </a>
-              </div>
-              <div className="mx-0 my-1 md:mx-1 md:my-0">
-                <a href="https://linkedin.com/in/ibrahimmkhalid">
-                  <p className="h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center">
-                    LinkedIn
-                  </p>
-                </a>
-              </div>
-              <div className="mx-0 my-1 md:mx-1 md:my-0">
-                <a href="mailto:ibrahimmkhalid@gmail.com">
-                  <p className="h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center">
-                    Email
-                  </p>
-                </a>
-              </div>
+            <div className={`flex flex-col pt-4 md:grid md:grid-cols-${quickLinks.length}`}>
+              {quickLinks.map((l) => {
+                var btnClass = "h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center";
+                if (firstQuickLink) {
+                  btnClass = btnClass + " bg-gray-800 text-white";
+                  firstQuickLink = false;
+                }
+                return (
+                  <div className="mx-0 my-1 md:mx-1 md:my-0">
+                    <a href={l.link}>
+                      <p className={btnClass}>{l.name}</p>
+                    </a>
+                  </div>
+                );
+              })}
             </div>
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="recent-blogs">
