@@ -40,7 +40,7 @@ function toggleMenu() {
 
 const Header = ({ isBlog = false }) => (
   <>
-    <div className="sticky top-0">
+    <div className="sticky top-0 z-10">
       <header className="flex h-14 items-center bg-white px-4 lg:px-6" id="#">
         <span
           className="items-center font-medium underline-offset-4 hover:underline"

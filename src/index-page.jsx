@@ -3,6 +3,7 @@ import { Header } from "./components/header.jsx";
 import { Blogs } from "./components/blogs.jsx";
 import { Experience } from "./components/experience.jsx";
 import { Education } from "./components/education.jsx";
+import { Project } from "./components/project.jsx";
 
 const isBuild = false;
 
@@ -78,6 +79,20 @@ const BodyContent = () => (
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="education">
             <Education />
+          </section>
+          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="projects">
+            <h1 className="text-2xl font-bold">Projects</h1>
+            <h2 className="pb-4 text-xl text-gray-600">Showcasing my skills</h2>
+            <div className="w-full py-4">
+              <Project title="Project 1" body="This is a project that I workd on when I was a child" />
+              <Project
+                title="Precision Home Agriculture and Refined Market Evaluation Resource (PHARMER)"
+                body="This is a project that I workd on when I was a child pqioweur qpwoeiru pqweoiru pqwoiuer pqweoiur qwpeoiru pqwoieur pqwoeiru poiqweur pqoweiur pqweoiru pqowieuer  pqoiru qpoweiru poiuqr pqoriweu poqiweueur"
+              />
+              <Project title="Project 3" body="This is a project that I workd on when I was a child" />
+              <Project title="Project 5" body="This is a project that I workd on when I was a child" />
+            </div>
+            <div className="grid w-full grid-cols-1 rounded-md border border-gray-500 py-4 md:grid-cols-2"></div>
           </section>
         </main>
       </div>
