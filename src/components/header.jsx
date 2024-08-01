@@ -1,3 +1,5 @@
+import { Button } from "./button.jsx";
+
 const tabs = [
   { name: "Recent Blogs", id: "recent-blogs" },
   { name: "Experience", id: "experience" },
@@ -92,13 +94,14 @@ const Header = ({ isBlog = false }) => (
                 </div>
                 {tabs.map((tab) => {
                   return (
-                    <div
-                      key={tab.id}
-                      className="my-4 rounded-md border-2 bg-gray-100 p-4 font-medium underline-offset-4 hover:cursor-pointer hover:underline"
-                      onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
-                    >
-                      {tab.name}
-                    </div>
+                    <Button>
+                      <div
+                        key={tab.id}
+                        onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
+                      >
+                        {tab.name}
+                      </div>
+                    </Button>
                   );
                 })}
               </div>

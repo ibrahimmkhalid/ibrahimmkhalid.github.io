@@ -1,4 +1,5 @@
 import { education } from "../data.js";
+import { Button } from "./button.jsx";
 
 export const Education = () => {
   return (
@@ -18,21 +19,17 @@ export const Education = () => {
                 </div>
                 <div className="flex h-full w-full flex-wrap py-2">
                   {experience.topSkills.map((p) => {
-                    return (
-                      <span className="mx-2 my-1 h-10 items-center justify-center rounded-md border-black bg-black px-4 py-2 text-white">
-                        {p}
-                      </span>
-                    );
+                    return <Button>{p}</Button>;
                   })}
                   {experience.links ? (
                     experience.links.map((p) => {
                       return (
-                        <span className="mx-2 my-1 h-10 items-center justify-center rounded-md border-black bg-black px-4 py-2 text-white">
+                        <Button>
                           <a href={`https://${p}`} className="items-center justify-center">
                             <i className="fas fa-external-link-alt mr-1"></i>
                             {p}
                           </a>
-                        </span>
+                        </Button>
                       );
                     })
                   ) : (
