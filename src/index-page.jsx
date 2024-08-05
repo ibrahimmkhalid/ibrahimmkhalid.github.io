@@ -5,8 +5,9 @@ import { Experience } from "./components/experience.jsx";
 import { Education } from "./components/education.jsx";
 import { Project } from "./components/project.jsx";
 
-const isBuild = true;
+const isBuild = false;
 
+//make sure to update grid cols accordingly
 const quickLinks = [
   {
     name: "Resume",
@@ -54,7 +55,7 @@ const BodyContent = () => (
               engineering in tandem with emerging machine learning and AI technologies. Currently seeking software
               engineering positions that focus on tool/system engineering or backend development.
             </p>
-            <div className={`flex flex-col pt-4 md:grid md:grid-cols-${quickLinks.length}`}>
+            <div className="flex flex-col pt-4 md:grid md:grid-cols-4">
               {quickLinks.map((l) => {
                 var btnClass = "h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center";
                 if (firstQuickLink) {
