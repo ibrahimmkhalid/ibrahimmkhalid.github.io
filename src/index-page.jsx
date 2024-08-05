@@ -88,9 +88,9 @@ const BodyContent = () => (
               <Project
                 title="Portfolio"
                 body="A personal website that showcases my work, experience, socials, resume, and also hosts my blogs"
-                buttons={["React"]}
-                image="https://utfs.io/f/23791c42-ae06-47b8-888e-5cd2570ffc49-nivyeo.png"
-                link="https://ibrahimkhalid.me"
+                buttons={["React", "TailwindCSS"]}
+                image="https://utfs.io/f/48d8a5eb-b91e-48f7-8a8c-edde7d13ea9b-ijvnt4.png"
+                link="#"
               />
             </div>
           </section>
