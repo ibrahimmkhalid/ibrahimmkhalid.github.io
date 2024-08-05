@@ -5,7 +5,7 @@ import { Experience } from "./components/experience.jsx";
 import { Education } from "./components/education.jsx";
 import { Project } from "./components/project.jsx";
 
-const isBuild = false;
+const isBuild = true;
 
 const quickLinks = [
   {
