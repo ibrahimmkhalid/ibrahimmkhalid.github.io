@@ -86,6 +86,13 @@ const BodyContent = () => (
             <h2 className="pb-4 text-xl text-gray-600">Showcasing my skills</h2>
             <div className="w-full grid-cols-2 py-4 2xl:grid">
               <Project
+                title="Video game trend report"
+                body="A brief report on the trends in video games over the last 40 years"
+                buttons={["Django", "HTMX"]}
+                image="https://utfs.io/f/48d8a5eb-b91e-48f7-8a8c-edde7d13ea9b-ijvnt4.png"
+                link="https://github.com/ibrahimmkhalid/data-200-assignment-3"
+              />
+              <Project
                 title="Portfolio"
                 body="A personal website that showcases my work, experience, socials, resume, and also hosts my blogs"
                 buttons={["React", "TailwindCSS"]}
