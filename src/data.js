@@ -46,6 +46,10 @@ const experiences = [
   },
 ];
 
+/**
+ * An array of education objects.
+ * @type {ResumeEntry[]}
+ */
 const education = [
   {
     title: "Master's of Science in Data Analytics",
