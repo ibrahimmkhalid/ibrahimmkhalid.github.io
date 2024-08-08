@@ -3,6 +3,7 @@ import { Button } from "./button.jsx";
 const tabs = [
   { name: "Recent Blogs", id: "recent-blogs" },
   { name: "Experience", id: "experience" },
+  { name: "Education", id: "education" },
   { name: "Projects", id: "projects" },
 ];
 
