@@ -64,7 +64,7 @@ const BodyContent = () => (
                 }
                 return (
                   <div className="mx-0 my-1 md:mx-1 md:my-0">
-                    <a href={l.link}>
+                    <a href={l.link} target="_blank">
                       <p className={btnClass}>{l.name}</p>
                     </a>
                   </div>
