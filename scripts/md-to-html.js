@@ -4,7 +4,7 @@ const path = require("path");
 
 const basePath = "./blogs/";
 const outPath = "./src/blogs/";
-const blogJsxPath = "./src/components/blogs.jsx";
+const blogJsxPath = "./src/sections/blogs.jsx";
 
 var unescapeStuff = [
   {

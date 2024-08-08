@@ -1,14 +1,14 @@
-import { experiences } from "../data.js";
-import { Button } from "./button.jsx";
+import { education } from "../data.js";
+import { Button } from "../components/button.jsx";
 
-export const Experience = () => {
+export const Education = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold">Experience</h1>
-      <h2 className="pb-4 text-xl text-gray-600">A list of my professional work experiences</h2>
+      <h1 className="text-2xl font-bold">Education</h1>
+      <h2 className="pb-4 text-xl text-gray-600">My studies over the years</h2>
       <div className="flex flex-col gap-2 text-lg">
         <div className="space-y-5">
-          {experiences.map((experience) => {
+          {education.map((experience) => {
             return (
               <div>
                 <div className="text-xl">

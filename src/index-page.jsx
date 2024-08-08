@@ -1,9 +1,9 @@
 import { Page } from "@nakedjsx/core/page";
 import { Header } from "./components/header.jsx";
-import { Blogs } from "./components/blogs.jsx";
-import { Experience } from "./components/experience.jsx";
-import { Education } from "./components/education.jsx";
 import { Project } from "./components/project.jsx";
+import { Blogs } from "./sections/blogs.jsx";
+import { Experience } from "./sections/experience.jsx";
+import { Education } from "./sections/education.jsx";
 
 const isBuild = false;
 
