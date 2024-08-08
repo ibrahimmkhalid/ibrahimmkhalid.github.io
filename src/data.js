@@ -83,4 +83,35 @@ const education = [
   },
 ];
 
-export { experiences, education };
+/**
+ * @typedef {Object} ProjectEntry
+ * @property {string} title - The title of the project.
+ * @property {string} body - A brief description of the project.
+ * @property {string[]} skills - An array of the skills learned in the project.
+ * @property {string} [image] - Link to the image showcasing the project.
+ * @property {string} link - Link to the project live demo or source code
+ */
+
+/**
+ * An array of experience objects.
+ * @type {ProjectEntry[]}
+ */
+const projects = [
+  {
+    title: "Video game trend report",
+    body: "A brief report on the trends in video games over the last 40 years",
+    buttons: ["Django", "HTMX"],
+    image: "https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png",
+    link: "https://github.com/ibrahimmkhalid/data-200-assignment-3",
+  },
+
+  {
+    title: "Portfolio",
+    body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
+    buttons: ["React", "TailwindCSS"],
+    image: "https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png",
+    link: "#",
+  },
+];
+
+export { experiences, education, projects };
