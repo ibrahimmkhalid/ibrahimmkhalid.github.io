@@ -12,7 +12,7 @@ export const Projects = () => {
             <Project
               title={project.title}
               body={project.body}
-              buttons={project.skills}
+              buttons={project.buttons}
               image={project.image}
               link={project.link}
             />
