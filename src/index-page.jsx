@@ -1,9 +1,9 @@
 import { Page } from "@nakedjsx/core/page";
 import { Header } from "./components/header.jsx";
-import { Project } from "./components/project.jsx";
 import { Blogs } from "./sections/blogs.jsx";
 import { Experience } from "./sections/experience.jsx";
 import { Education } from "./sections/education.jsx";
+import { Projects } from "./sections/projects.jsx";
 
 const isBuild = false;
 
@@ -82,24 +82,7 @@ const BodyContent = () => (
             <Education />
           </section>
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="projects">
-            <h1 className="text-2xl font-bold">Projects</h1>
-            <h2 className="pb-4 text-xl text-gray-600">Showcasing my skills</h2>
-            <div className="w-full grid-cols-2 gap-4 py-4 2xl:grid">
-              <Project
-                title="Video game trend report"
-                body="A brief report on the trends in video games over the last 40 years"
-                buttons={["Django", "HTMX"]}
-                image="https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png"
-                link="https://github.com/ibrahimmkhalid/data-200-assignment-3"
-              />
-              <Project
-                title="Portfolio"
-                body="A personal website that showcases my work, experience, socials, resume, and also hosts my blogs"
-                buttons={["React", "TailwindCSS"]}
-                image="https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png"
-                link="#"
-              />
-            </div>
+            <Projects />
           </section>
         </main>
       </div>
