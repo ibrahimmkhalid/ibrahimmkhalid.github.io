@@ -104,7 +104,6 @@ const projects = [
     image: "https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png",
     link: "https://github.com/ibrahimmkhalid/data-200-assignment-3",
   },
-
   {
     title: "Portfolio",
     body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
