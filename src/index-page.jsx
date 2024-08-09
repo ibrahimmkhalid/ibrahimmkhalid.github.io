@@ -35,7 +35,7 @@ const BodyContent = () => (
       <Header />
       <div className="flex flex-col" id="top">
         <main className="flex flex-col items-center px-4">
-          {isBuild ? (
+          {isBuild && (
             <>
               <div className="m-4 rounded-full border-8 border-red-500 p-4">
                 (Page experience still being built...)
@@ -43,8 +43,6 @@ const BodyContent = () => (
                 If you found this page, please explore the buttons just below
               </div>
             </>
-          ) : (
-            <></>
           )}
           <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5">
             <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>

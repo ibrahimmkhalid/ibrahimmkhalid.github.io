@@ -22,28 +22,24 @@ export const Blogs = ({ count = -1 }) => {
       <h2 className="pb-4 text-xl text-gray-600">Just some random thoughts I have had recently...</h2>
       <div className="flex flex-col gap-2">
         <ul className="space-y-5">
-          {blogs.map((blog) => {
-            return (
-              <li>
-                <a className="h-10 w-full items-center underline hover:text-blue-800" href={blog.link}>
-                  <h3 className="text-lg">
-                    <span className="font-bold">{blog.title}</span>
-                    <span className="font-thin"> ({blog.date})</span>
-                  </h3>
-                  <p className="text-md">{blog.tagline}</p>
-                </a>
-              </li>
-            );
-          })}
+          {blogs.map((blog) => (
+            <li>
+              <a className="h-10 w-full items-center underline hover:text-blue-800" href={blog.link}>
+                <h3 className="text-lg">
+                  <span className="font-bold">{blog.title}</span>
+                  <span className="font-thin"> ({blog.date})</span>
+                </h3>
+                <p className="text-md">{blog.tagline}</p>
+              </a>
+            </li>
+          ))}
         </ul>
-        {count > 0 ? (
+        {count > 0 && (
           <>
             <a className="text-md h-10 w-full items-center underline hover:text-blue-800" href="/blogs">
               View all...
             </a>
           </>
-        ) : (
-          <></>
         )}
       </div>
     </>

@@ -15,9 +15,9 @@ export const Project = ({ title, body, image, link = "", buttons = [] }) => {
             <h3 className="py-4 text-lg font-semibold tracking-tight">{title}</h3>
             <p className="pb-4 text-sm">{body}</p>
             <div className="flex flex-wrap pb-4">
-              {buttons.map((button) => {
-                return <Button>{button}</Button>;
-              })}
+              {buttons.map((button) => (
+                <Button>{button}</Button>
+              ))}
             </div>
           </div>
         </a>

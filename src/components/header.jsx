@@ -69,17 +69,15 @@ const Header = ({ isBlog = false }) => (
         ) : (
           <>
             <nav className="ml-auto hidden gap-4 sm:gap-6 md:flex">
-              {tabs.map((tab) => {
-                return (
-                  <span
-                    key={tab.id}
-                    className="font-medium underline-offset-4 hover:underline"
-                    onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
-                  >
-                    {tab.name}
-                  </span>
-                );
-              })}
+              {tabs.map((tab) => (
+                <span
+                  key={tab.id}
+                  className="font-medium underline-offset-4 hover:underline"
+                  onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
+                >
+                  {tab.name}
+                </span>
+              ))}
             </nav>
             <div className="ml-auto gap-4 sm:gap-6 md:hidden">
               <div className="flex hover:cursor-pointer" id="burger-menu-button" onclick="toggleMenu()">
@@ -94,18 +92,16 @@ const Header = ({ isBlog = false }) => (
                 <div className="absolute right-0 top-0 mx-4 my-4 hover:cursor-pointer">
                   <i className="fas fa-times"></i>
                 </div>
-                {tabs.map((tab) => {
-                  return (
-                    <Button>
-                      <div
-                        key={tab.id}
-                        onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
-                      >
-                        {tab.name}
-                      </div>
-                    </Button>
-                  );
-                })}
+                {tabs.map((tab) => (
+                  <Button>
+                    <div
+                      key={tab.id}
+                      onClick={`document.getElementById("${tab.id}").scrollIntoView({behavior:"smooth"})`}
+                    >
+                      {tab.name}
+                    </div>
+                  </Button>
+                ))}
               </div>
             </div>
           </>
