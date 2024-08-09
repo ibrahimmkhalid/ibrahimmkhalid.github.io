@@ -57,7 +57,7 @@ const BodyContent = () => (
               {quickLinks.map((l) => {
                 var btnClass = "h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center";
                 if (firstQuickLink) {
-                  btnClass = btnClass + " bg-gray-800 text-white";
+                  btnClass = btnClass + " bg-black text-white";
                   firstQuickLink = false;
                 }
                 return (
