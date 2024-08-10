@@ -98,6 +98,13 @@ const education = [
  */
 const projects = [
   {
+    title: "Portfolio",
+    body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
+    buttons: ["React", "TailwindCSS"],
+    image: "https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png",
+    link: "#",
+  },
+  {
     title: "Video game trend report",
     body: "A brief report on the trends in video games over the last 40 years",
     buttons: ["Django", "HTMX"],
@@ -105,11 +112,31 @@ const projects = [
     link: "https://github.com/ibrahimmkhalid/data-200-assignment-3",
   },
   {
-    title: "Portfolio",
-    body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
-    buttons: ["React", "TailwindCSS"],
-    image: "https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png",
-    link: "#",
+    title: "IBKBD",
+    body: "Ergonomic keyboards designed and developed by me for my needs. MX wired for desktop use, choc wireless for on the go.",
+    buttons: ["Circuit Design"],
+    image: "https://utfs.io/f/e96d2b18-80a9-4b74-a826-46b2179e9b75-1nj8s4.jpg",
+    link: "https://github.com/ibrahimmkhalid/ibkbd",
+  },
+  {
+    title: "Fast network threat detection model",
+    body: "An investigation into which model is best at accurate and quick detection of known and novel network anomalies",
+    buttons: ["Machine Learning", "Python"],
+    image: "https://utfs.io/f/f5c5c355-0ad9-421c-84b4-b89fcae68fb4-tka03.png",
+    link: "https://github.com/ibrahimmkhalid/data-245-project",
+  },
+  {
+    title: "HTTP Server in GoLang",
+    body: "A simple web server communicating over HTTP to serve some predefined endpoints. Based on CodeCrafters build",
+    buttons: ["GoLang", "HTTP"],
+    link: "https://github.com/ibrahimmkhalid/http-server-go",
+  },
+  {
+    title: "Shopping application full stack in PyQT",
+    body: "Multi user shopping application client and server. Includes administrator and customer view",
+    buttons: ["PyQT", "MySQL"],
+    image: "https://utfs.io/f/efe43b4d-924b-471c-a3c9-80e29d2ccb5b-1z9hq2.png",
+    link: "https://github.com/ibrahimmkhalid/shopping-application-pyqt",
   },
 ];
 
