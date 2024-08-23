@@ -1,7 +1,8 @@
 export const Blogs = ({ count = -1 }) => {
   var blogs = [
     ////
-    { date: "2024-08-13", link: "/blogs/personal-development-environment", title: "Personal Development Environment" },
+    { date: "2024-08-23", link: "/blogs/back-to-school", title: "Back to school" },
+    { date: "2024-08-10", link: "/blogs/personal-development-environment", title: "personal development environment" },
     {
       date: "2024-07-22",
       link: "/blogs/unconventional-making-of-this-website",
