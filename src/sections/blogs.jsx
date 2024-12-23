@@ -1,6 +1,12 @@
 export const Blogs = ({ count = -1 }) => {
   var blogs = [
     ////
+    {
+      date: "2024-12-15",
+      link: "/blogs/fall-2024-retrospective",
+      tagline: "Semester 3 out of 4!",
+      title: "Fall 2024 retrospective",
+    },
     { date: "2024-08-23", link: "/blogs/back-to-school", title: "Back to school" },
     { date: "2024-08-10", link: "/blogs/personal-development-environment", title: "personal development environment" },
     {
