@@ -98,6 +98,13 @@ const education = [
  */
 const projects = [
   {
+    title: "Comic book face generator",
+    body: "Using StyleGAN deep learning model to generate faces trained on a dataset of 10,000 images",
+    buttons: ["Deep Learning", "PyTorch", "Convolutional Neural Networks"],
+    image: "https://raw.githubusercontent.com/ibrahimmkhalid/stylegan-pytorch/refs/heads/main/assets/sample.png",
+    link: "https://github.com/ibrahimmkhalid/stylegan-pytorch",
+  },
+  {
     title: "Portfolio",
     body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
     buttons: ["React", "TailwindCSS"],
