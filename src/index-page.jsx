@@ -48,10 +48,10 @@ const BodyContent = () => (
             <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
             <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
             <p className="text-lg">
-              Dedicated software engineer with an interest in system software and tool development. I am pursuing a
-              master’s degree in data Analytics at San Jose State University. Allowing me to use my skills in software
-              engineering in tandem with emerging machine learning and AI technologies. Currently seeking software
-              engineering positions that focus on tool/system engineering or backend development.
+              I hold a master&apos;s degree in Data Analytics from San Jose State University, where I developed a strong
+              foundation in software engineering alongside emerging machine learning and AI technologies. I am currently
+              seeking software engineering positions across a variety of disciplines, including web development, tool
+              development, and machine learning/AI engineering.
             </p>
             <div className="flex flex-col pt-4 md:grid md:grid-cols-4">
               {quickLinks.map((l) => {

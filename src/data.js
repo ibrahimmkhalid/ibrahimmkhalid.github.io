@@ -98,6 +98,13 @@ const education = [
  */
 const projects = [
   {
+    title: "Obstacle detection for drone flight path",
+    body: "End to end computer vision web platform with a focus on creating models for use in camera-equipped drones",
+    image: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzqJAqidPGQyVWODFxcg1i3nNrlBRYf69KhaA2",
+    buttons: ["Convolutional Neural Networks", "Ultralytics", "AWS", "Next.js"],
+    link: "https://sjsu-msda-f24-team6-webportal.vercel.app/",
+  },
+  {
     title: "Comic book face generator",
     body: "Using StyleGAN deep learning model to generate faces trained on a dataset of 10,000 images",
     buttons: ["Deep Learning", "PyTorch", "Convolutional Neural Networks"],
