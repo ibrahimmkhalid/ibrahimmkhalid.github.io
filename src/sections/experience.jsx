@@ -33,7 +33,7 @@ export const Experience = () => {
               {experience.short && <span>{experience.short}</span>}
               {experience.points && (
                 <>
-                  <ul className="list-disc space-y-2">
+                  <ul className="list-disc space-y-0">
                     {experience.points.map((p) => (
                       <li className="ml-8">{p}</li>
                     ))}

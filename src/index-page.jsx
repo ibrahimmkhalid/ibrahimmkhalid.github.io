@@ -44,7 +44,7 @@ const BodyContent = () => (
               </div>
             </>
           )}
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5">
+          <section className="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5">
             <h1 className="text-4xl font-bold">Ibrahim Khalid</h1>
             <h2 className="pb-4 text-xl text-gray-600">Software Engineer</h2>
             <p className="text-lg">
@@ -70,16 +70,16 @@ const BodyContent = () => (
               })}
             </div>
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="recent-blogs">
+          <section className="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="recent-blogs">
             <Blogs count={4} />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="experience">
+          <section className="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="experience">
             <Experience />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="education">
+          <section className="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="education">
             <Education />
           </section>
-          <section className="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5" id="projects">
+          <section className="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="projects">
             <Projects />
           </section>
         </main>
