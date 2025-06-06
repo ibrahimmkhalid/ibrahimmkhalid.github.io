@@ -25,10 +25,16 @@ const experiences = [
       "Maintained and developed backend APIs for a leading grocery ecommerce website. Used PHP/Laravel and MySQL to build various features leading to product improvement.",
     links: ["grocerapp.pk"],
     points: [
-      "Automated customer verification in user signup flow, reducing abusive accounts by 85+%.",
-      "Created an endpoint allowing users to subscribe to product stock notifications, leading to an increase in sales by 35%",
+      "Developed backend APIs for a leading grocery ecommerce website. Used PHP/Laravel and MySQL to build various features",
+      "Automated customer verification in user signup flow, reducing abusive accounts by 85+%",
       "Developed internal tools to create time and stock limited promos on select products, increasing impulse purchases by 10%",
-      "Completed over 40 software bug tickets in a timely manner on backend, web, and mobile",
+      "Created a REST API endpoint allowing users to subscribe to stock notifications, leading to an increase in sales by 35% QoQ",
+      "Completed over 40 software bug tickets in a timely manner on backend, web, and mobile, using unit testing for quality control",
+      "Ensured scalability and performance by optimizing queries and ensuring proper concurrency to handle high traffic efficiently",
+      "Used CI/CD to deploy all builds for apps and updated backend server using GitHub Workflow",
+      "Communicated and collaborated with multiple teams across finance, design, product, and operations domains to collaborate on various features",
+      "Followed the Agile workflow for all sprints, using SOLID principles and design patterns to guide our efforts",
+      "Wrote a well documented internal docker script for new developer onboarding, saving multiple hours of configuration",
     ],
   },
   {
@@ -52,33 +58,19 @@ const experiences = [
  */
 const education = [
   {
-    title: "Master's of Science in Data Analytics",
+    title: "MS. Data Analytics",
     where: "San Jose State University",
     from: "Fall 2023",
-    to: "Current",
+    to: "Spring 2025",
     topSkills: ["Python", "Data Analytics", "Machine Learning"],
-    short:
-      "Current courses include Database systems for analytics, Machine Learning Technologies, and Big Data Technologies and Applications, providing a strong foundation for working on data and AI/ML projects.",
-    points: [
-      "Completed 6 courses out of a planned 11, growing a strong foundation for artificial intelligence and handling big data",
-      "Achieved top scores in multiple projects and assignments",
-      "assisted 10 peers in difficult tasks and lead team projects to completion",
-    ],
     links: ["sjsu.edu"],
   },
   {
-    title: "Bachelors's of Science in Electrical Engineering",
+    title: "BS. Electrical Engineering",
     where: "National University of Computer and Emerging Sciences",
     from: "Fall 2017",
     to: "Spring 2021",
-    topSkills: ["C/C++", "SQL", "Python", "Digital Design", "Assembly", "Electrical Engineering"],
-    short:
-      "Key courses studied, such as Data Structures and Algorithms, Applied Machine Learning, and Fundamentals of databases, established a foundation for efficient and optimized programming across various disciplines",
-    points: [
-      "Achieved Dean's Honor List Spring 2019, Member of local chapter IEEE Robotics Club",
-      "Top scorer in major courses, helped several fellow students on various topics",
-      "Coordinated and led multiple projects, including developing a traffic sign classifier, a web app using .NET framework nad MySQL, a room security solution using assembly, and multiple complex algorithms",
-    ],
+    topSkills: ["C/C++", "SQL", "Python", "Digital Design", "Computer Engineering"],
     links: ["lhr.nu.edu.pk"],
   },
 ];
