@@ -97,7 +97,7 @@ const BodyContent = () => (
                 zip files. The format we convert to is the{" "}
                 <a className="underline hover:text-blue-800" href="https://github.com/ultralytics/ultralytics">
                   ultralytics
-                </a>
+                </a>{" "}
                 format and the{" "}
                 <a className="underline hover:text-blue-800" href="https://arxiv.org/abs/1405.0312">
                   coco
