@@ -87,7 +87,7 @@ So far in this semester we have done extensive literature surveys and testing
 of base models on the [VisDrone](https://github.com/VisDrone/VisDrone-Dataset) dataset. In the upcoming semester, we hope to improve our model architectures,
 improve our dataset, and create a more robust cloud pipeline. Since we are
 currently working on the project, I cannot share it here until it is complete.
-When that is done, I will update this page with the link.
+When that is done, I will update this page with the link. (Edit to add links: [blog](/blogs/i-guess-im-a-master-now/), [project](https://sjsu-msda-f24-team6-webportal.vercel.app/))
 
 # Wrapping up
 

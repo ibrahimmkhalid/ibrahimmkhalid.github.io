@@ -109,7 +109,15 @@ const BodyContent = () => (
                 </a>{" "}
                 dataset. In the upcoming semester, we hope to improve our model architectures, improve our dataset, and
                 create a more robust cloud pipeline. Since we are currently working on the project, I cannot share it
-                here until it is complete. When that is done, I will update this page with the link.
+                here until it is complete. When that is done, I will update this page with the link. (Edit to add links:{" "}
+                <a className="underline hover:text-blue-800" href="/blogs/i-guess-im-a-master-now/">
+                  blog
+                </a>
+                ,{" "}
+                <a className="underline hover:text-blue-800" href="https://sjsu-msda-f24-team6-webportal.vercel.app/">
+                  project
+                </a>
+                )
               </p>
               <h2 className="my-2 text-3xl font-bold underline" id="wrappingup">
                 Wrapping up
