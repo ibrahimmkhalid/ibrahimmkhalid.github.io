@@ -115,7 +115,7 @@ const projects = [
     body: "A brief report on the trends in video games over the last 40 years",
     buttons: ["Django", "HTMX"],
     image: "https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png",
-    link: "https://github.com/ibrahimmkhalid/data-200-assignment-3",
+    link: "https://django-video-games-report-s13lc.kinsta.app",
   },
   {
     title: "IBKBD",
