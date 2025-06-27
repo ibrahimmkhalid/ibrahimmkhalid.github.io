@@ -1,6 +1,6 @@
 ---
 title: Fall 2024 retrospective
-date: 2024-12-15
+pubDate: 2024-12-15
 tagline: Semester 3 out of 4!
 ---
 

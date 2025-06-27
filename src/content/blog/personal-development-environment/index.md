@@ -1,6 +1,6 @@
 ---
 title: personal development environment
-date: 2024-08-10
+pubDate: 2024-08-10
 tagline:
 ---
 

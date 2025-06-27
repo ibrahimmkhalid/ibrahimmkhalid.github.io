@@ -1,6 +1,6 @@
 ---
 title: Final semester starts today!
-date: 2025-01-28
+pubDate: 2025-01-28
 tagline: The final frontier
 ---
 

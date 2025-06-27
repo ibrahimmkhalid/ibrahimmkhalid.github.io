@@ -1,6 +1,6 @@
 ---
 title: I guess I'm a master now?
-date: 2025-05-22
+pubDate: 2025-05-22
 tagline: Capstone project retrospective
 ---
 

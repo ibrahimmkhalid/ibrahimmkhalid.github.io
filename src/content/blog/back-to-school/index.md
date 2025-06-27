@@ -1,6 +1,6 @@
 ---
 title: Back to school
-date: 2024-08-23
+pubDate: 2024-08-23
 tagline:
 ---
 
