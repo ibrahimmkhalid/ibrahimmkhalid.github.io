@@ -1,7 +1,7 @@
 ---
 title: Final semester starts today!
 pubDate: 2025-01-28
-tagline: The final frontier
+description: The final frontier
 ---
 
 Once again I find myself at the start of another semester. If all goes

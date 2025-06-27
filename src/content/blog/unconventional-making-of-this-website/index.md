@@ -1,8 +1,11 @@
 ---
 title: The Unconventional Making of This Website
 pubDate: 2024-07-22
-tagline:
+description: an old blog from a previous era
 ---
+
+**Update: As mentioned later in this blog, I finally moved to a new platform! I
+am now using Astro for site management**
 
 Us developers, often, decide to make a personal website to showcase our work
 and put our name out there. These are often created from static site generators

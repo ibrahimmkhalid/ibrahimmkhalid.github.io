@@ -1,7 +1,7 @@
 ---
 title: Fall 2024 retrospective
 pubDate: 2024-12-15
-tagline: Semester 3 out of 4!
+description: Semester 3 out of 4!
 ---
 
 Semester 3 of 4 complete! This was one of the more challenging semesters I have

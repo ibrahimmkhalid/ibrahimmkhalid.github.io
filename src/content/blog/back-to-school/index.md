@@ -1,7 +1,7 @@
 ---
 title: Back to school
 pubDate: 2024-08-23
-tagline:
+description: Starting my third semester
 ---
 
 This week marks the beginning of the third semester of my Master's program at

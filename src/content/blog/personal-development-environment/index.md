@@ -1,7 +1,7 @@
 ---
 title: personal development environment
 pubDate: 2024-08-10
-tagline:
+description: Yet another developer talking about his development environment
 ---
 
 Ah yes, the humble personal development environment. A system of configurations

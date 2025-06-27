@@ -1,7 +1,7 @@
 ---
 title: I guess I'm a master now?
 pubDate: 2025-05-22
-tagline: Capstone project retrospective
+description: Capstone project retrospective
 ---
 
 After 2 years of back to back work, long overnight binges, and using too many

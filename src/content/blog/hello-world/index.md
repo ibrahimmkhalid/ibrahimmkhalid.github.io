@@ -1,7 +1,7 @@
 ---
 title: Hello World
 pubDate: 2024-07-03
-tagline: My first blogpost
+description: My first blogpost
 ---
 
 Ahem...
