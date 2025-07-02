@@ -3,8 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Projects from '../sections/projects.jsx'
 import Header from '../components/Header.astro';
 import Blogs from '../sections/blogs.astro'
-import Experience from '../sections/experience.astro'
-import Education from '../sections/education.astro'
+import Entry from '../sections/entry.astro'
 import Projects from '../sections/projects.astro'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
@@ -81,10 +80,10 @@ var firstQuickLink = true;
             <Blogs count={4} />
           </section>
           <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="experience">
-            <Experience />
+            <Entry section="experience" />
           </section>
           <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="education">
-            <Education />
+            <Entry section="education" />
           </section>
           <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="projects">
             <Projects />
