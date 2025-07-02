@@ -1,4 +1,3 @@
----
 import BurgerMenu from './BurgerMenu.jsx';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faArrowLeft, faCode} from '@fortawesome/free-solid-svg-icons';
@@ -11,25 +10,24 @@ const tabs = [
   { name: "Projects", id: "projects" },
 ];
 
-const { isBlog = false } = Astro.props;
----
 
-<div class="sticky top-0 z-10">
-  <header class="flex h-14 items-center bg-white px-4 lg:px-6" id="#">
+export default function Header({isBlog}) {
+return (<div className="sticky top-0 z-10">
+  <header className="flex h-14 items-center bg-white px-4 lg:px-6" id="#">
     <span
-      class="items-center font-medium underline-offset-4 hover:underline"
-      style="cursor:pointer"
-      on:click={() => window.scrollTo({top:0, behavior: "smooth"})}
+      className="items-center font-medium underline-offset-4 hover:underline"
+      style={{cursor: "pointer"}}
+      onClick={() => window.scrollTo({top:0, behavior: "smooth"})}
     >
       {isBlog ? (
         <a href="/" style={{color: "black", textDecoration: "none"}}>
-        <span class="flex items-center gap-2">
+        <span className="flex items-center gap-2">
           <FontAwesomeIcon icon={faArrowLeft} style={{width: "1em", height: "1em", color: "black"}}/> 
           <span style={{color: "black", textDecoration: "none"}}>Ibrahim Khalid</span>
         </span>
         </a>
       ) : (
-        <span class="flex items-center gap-2">
+        <span className="flex items-center gap-2">
           <FontAwesomeIcon icon={faCode} style={{width: "1em", height: "1em"}}/> 
           <span>Ibrahim Khalid</span>
         </span>
@@ -37,12 +35,12 @@ const { isBlog = false } = Astro.props;
     </span>
     {isBlog ? null : (
       <>
-        <nav class="ml-auto hidden gap-4 sm:gap-6 md:flex">
+        <nav className="ml-auto hidden gap-4 sm:gap-6 md:flex">
           {tabs.map(tab => (
             <span
-              class="font-medium underline-offset-4 hover:underline"
-              style="cursor:pointer"
-              on:click={() =>
+              className="font-medium underline-offset-4 hover:underline"
+              style={{cursor: "pointer"}}
+              onClick={() =>
                 document.getElementById(tab.id)?.scrollIntoView({ behavior: "smooth" })
               }
             >
@@ -50,11 +48,12 @@ const { isBlog = false } = Astro.props;
             </span>
           ))}
         </nav>
-        <div class="ml-auto gap-4 sm:gap-6 md:hidden">
-          <BurgerMenu client:load tabs={tabs} />
+        <div className="ml-auto gap-4 sm:gap-6 md:hidden">
+          <BurgerMenu tabs={tabs} />
         </div>
       </>
     )}
   </header>
-  <hr class="border-t border-gray-200"/>
-</div>
+  <hr className="border-t border-gray-200"/>
+</div>)
+}
