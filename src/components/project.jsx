@@ -3,7 +3,7 @@ import Button from "./Button.jsx";
 export const Project = ({ title, body, image, link = "", buttons = [] }) => {
   return (
     <>
-      <div class="z-0 my-4 w-full rounded-lg border hover:shadow">
+      <div class="z-0 my-4 w-full rounded-lg border-gray-200 border hover:shadow">
         <a class="h-auto pb-8" href={link} target="_blank">
           {image && (
             <div class="relative overflow-hidden rounded-t-lg">

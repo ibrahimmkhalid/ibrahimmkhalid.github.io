@@ -12,9 +12,8 @@ import {faExternalLinkAlt} from '@fortawesome/free-solid-svg-icons';
     {experiences.map((experience) => (
       <div>
         <div class="text-xl">
-          <span class="font-bold">{experience.title}</span>
-          <span class="font-thin">
-            {", "} {experience.where} ({experience.from} to {experience.to})
+          <span class="font-bold">{experience.title}</span><span class="font-thin">,
+            {experience.where} ({experience.from} to {experience.to})
           </span>
         </div>
         <div class="flex h-full w-full flex-wrap py-2">
