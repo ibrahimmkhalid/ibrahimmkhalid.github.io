@@ -1,20 +1,26 @@
-/**
- * @typedef {Object} ResumeEntry
- * @property {string} title - The title of the position.
- * @property {string} where - The name of the company.
- * @property {string} from - The start date of the position.
- * @property {string} to - The end date of the position.
- * @property {string[]} topSkills - An array of up to the top 3 skills used in the position.
- * @property {string[]} [links] - An array of links related to the position.
- * @property {string} [short] - A short description of the position.
- * @property {string[]} [points] - An array of points describing the position.
- */
+export const SITE_TITLE = 'Ibrahim Khalid';
+export const SITE_DESCRIPTION = 'Welcome to my website!';
 
-/**
- * An array of experience objects.
- * @type {ResumeEntry[]}
- */
-const experiences = [
+interface ResumeEntry {
+  title: string;
+  where: string;
+  from: string;
+  to: string;
+  topSkills: string[];
+  links?: string[];
+  short?: string;
+  points?: string[];
+}
+
+interface ProjectEntry {
+  title: string;
+  body: string;
+  buttons: string[];
+  image?: string;
+  link: string;
+}
+
+export const experiences: ResumeEntry[] = [
   {
     title: "Backend Developer",
     where: "GrocerApp",
@@ -52,11 +58,7 @@ const experiences = [
   },
 ];
 
-/**
- * An array of education objects.
- * @type {ResumeEntry[]}
- */
-const education = [
+export const education: ResumeEntry[] = [
   {
     title: "MS. Data Analytics",
     where: "San Jose State University",
@@ -75,20 +77,7 @@ const education = [
   },
 ];
 
-/**
- * @typedef {Object} ProjectEntry
- * @property {string} title - The title of the project.
- * @property {string} body - A brief description of the project.
- * @property {string[]} skills - An array of the skills learned in the project.
- * @property {string} [image] - Link to the image showcasing the project.
- * @property {string} link - Link to the project live demo or source code
- */
-
-/**
- * An array of experience objects.
- * @type {ProjectEntry[]}
- */
-const projects = [
+export const projects: ProjectEntry[] = [
   {
     title: "Obstacle detection for drone flight path",
     body: "End to end computer vision web platform with a focus on creating models for use in camera-equipped drones",
@@ -145,5 +134,3 @@ const projects = [
     link: "https://github.com/ibrahimmkhalid/shopping-application-pyqt",
   },
 ];
-
-export { experiences, education, projects };

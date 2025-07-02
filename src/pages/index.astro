@@ -1,0 +1,95 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Projects from '../sections/projects.jsx'
+import Header from '../components/Header.astro';
+import Blogs from '../sections/blogs.astro'
+import Experience from '../sections/experience.astro'
+import Education from '../sections/education.astro'
+import Projects from '../sections/projects.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const isBuild = false
+
+const quickLinks = [
+  {
+    name: "Resume",
+    link: "https://drive.google.com/file/d/19qmTRpP0RprfNma2gAVtgAg8XbIYtNOv/view?usp=drive_link",
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/ibrahimmkhalid",
+  },
+  {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/ibrahimmkhalid",
+  },
+  {
+    name: "Email",
+    link: "mailto:ibrahimmkhalid@gmail.com",
+  },
+];
+
+var firstQuickLink = true;
+---
+
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+      <div class="flex flex-col" id="top">
+        <main class="flex flex-col items-center px-4">
+          {isBuild && (
+            <>
+              <div class="m-4 rounded-full border-8 border-red-500 p-4">
+                (Page experience still being built...)
+                <br />
+                If you found this page, please explore the buttons just below
+              </div>
+            </>
+          )}
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5">
+            <h1 class="text-4xl font-bold">Ibrahim Khalid</h1>
+            <h2 class="pb-4 text-xl text-gray-600">Software Engineer</h2>
+            <p class="text-lg">
+              I hold a master&apos;s degree in Data Analytics from San Jose State University, where I developed a strong
+              foundation in software engineering alongside emerging machine learning and AI technologies. I am currently
+              seeking software engineering positions across a variety of disciplines, including web development, tool
+              development, and machine learning/AI engineering.
+            </p>
+            <div class="flex flex-col pt-4 md:grid md:grid-cols-4">
+              {quickLinks.map((l) => {
+                var btnClass = "h-10 w-full items-center justify-center rounded-md border px-4 py-2 text-center";
+                if (firstQuickLink) {
+                  btnClass = btnClass + " bg-black text-white";
+                  firstQuickLink = false;
+                }
+                return (
+                  <div class="mx-0 my-1 md:mx-1 md:my-0">
+                    <a href={l.link} target="_blank">
+                      <p class={btnClass}>{l.name}</p>
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          </section>
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="recent-blogs">
+            <Blogs count={4} />
+          </section>
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="experience">
+            <Experience />
+          </section>
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="education">
+            <Education />
+          </section>
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="projects">
+            <Projects />
+          </section>
+        </main>
+      </div>
+	</body>
+</html>

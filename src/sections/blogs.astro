@@ -1,0 +1,53 @@
+---
+interface Props {
+  count?: number;
+}
+
+const { count = -1 } = Astro.props;
+
+import { getCollection } from 'astro:content';
+import FormattedDate from '../components/FormattedDate.astro';
+
+let blogs = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+if (count > 0) {
+  var totalCount = blogs.length;
+  blogs = blogs.slice(0, count > totalCount ? totalCount : count);
+}
+---
+<>
+  {count > 0 ? (
+    <>
+      <h1 class="text-2xl font-bold">Recent Blogs</h1>
+    </>
+  ) : (
+    <>
+      <h1 class="text-4xl font-bold underline">All Blogs</h1>
+    </>
+  )}
+  <h2 class="pb-4 text-xl text-gray-600">Just some random thoughts I have had recently...</h2>
+  <div class="flex flex-col gap-2">
+    <ul class="space-y-5">
+      {blogs.map((blog) => (
+        <li>
+          <a class="h-10 w-full items-center underline hover:text-blue-800 hover:cursor-pointer" href={`/blogs/${blog.id}/`}>
+            <h3 class="text-lg">
+              <span class="font-bold">{blog.data.title}</span>
+              <span class="font-thin"> (<FormattedDate date={blog.data.pubDate}/>)</span>
+            </h3>
+            <p class="text-md">{blog.data.description}</p>
+          </a>
+        </li>
+      ))}
+    </ul>
+    {count > 0 && (
+      <>
+        <a class="text-md h-10 w-full items-center underline hover:text-blue-800" href="/blogs">
+          View all...
+        </a>
+      </>
+    )}
+  </div>
+</>

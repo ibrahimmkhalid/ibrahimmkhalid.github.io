@@ -1,0 +1,60 @@
+---
+import BurgerMenu from './BurgerMenu.jsx';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowLeft, faCode} from '@fortawesome/free-solid-svg-icons';
+
+
+const tabs = [
+  { name: "Recent Blogs", id: "recent-blogs" },
+  { name: "Experience", id: "experience" },
+  { name: "Education", id: "education" },
+  { name: "Projects", id: "projects" },
+];
+
+const { isBlog = false } = Astro.props;
+---
+
+<div class="sticky top-0 z-10">
+  <header class="flex h-14 items-center bg-white px-4 lg:px-6" id="#">
+    <span
+      class="items-center font-medium underline-offset-4 hover:underline"
+      style="cursor:pointer"
+      on:click={() => window.scrollTo({top:0, behavior: "smooth"})}
+    >
+      {isBlog ? (
+        <a href="/" style={{color: "black", textDecoration: "none"}}>
+        <span class="flex items-center gap-2">
+          <FontAwesomeIcon icon={faArrowLeft} style={{width: "1em", height: "1em", color: "black"}}/> 
+          <span style={{color: "black", textDecoration: "none"}}>Ibrahim Khalid</span>
+        </span>
+        </a>
+      ) : (
+        <span class="flex items-center gap-2">
+          <FontAwesomeIcon icon={faCode} style={{width: "1em", height: "1em"}}/> 
+          <span>Ibrahim Khalid</span>
+        </span>
+      )}
+    </span>
+    {isBlog ? null : (
+      <>
+        <nav class="ml-auto hidden gap-4 sm:gap-6 md:flex">
+          {tabs.map(tab => (
+            <span
+              class="font-medium underline-offset-4 hover:underline"
+              style="cursor:pointer"
+              on:click={() =>
+                document.getElementById(tab.id)?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              {tab.name}
+            </span>
+          ))}
+        </nav>
+        <div class="ml-auto gap-4 sm:gap-6 md:hidden">
+          <BurgerMenu client:load tabs={tabs} />
+        </div>
+      </>
+    )}
+  </header>
+  <hr />
+</div>
