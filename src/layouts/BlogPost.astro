@@ -3,6 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.jsx';
 import FormattedDate from '../components/FormattedDate.astro';
+import { SITE_TITLE } from '../consts.ts'
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -11,7 +12,7 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+    <BaseHead title={`${title} | ${SITE_TITLE}`} description={description} />
 	</head>
 	<body>
 		<Header client:load isBlog/>
