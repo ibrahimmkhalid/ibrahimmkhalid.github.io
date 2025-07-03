@@ -1,6 +1,7 @@
 ---
 title: The Unconventional Making of This Website
 pubDate: 2024-07-22
+updatedDate: 2025-07-02
 description: an old blog from a previous era
 ---
 
