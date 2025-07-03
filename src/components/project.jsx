@@ -7,7 +7,7 @@ export const Project = ({ title, body, image, link = "", buttons = [] }) => {
         <a class="h-auto pb-8" href={link} target="_blank">
           {image && (
             <div class="relative overflow-hidden rounded-t-lg">
-              <img src={image} class="aspect-video object-cover transition-all" />
+              <img src={image.link} class="aspect-video object-cover transition-all" alt={image.alt}/>
               <div class="absolute inset-0 bg-gray-200/20"></div>
             </div>
           )}
