@@ -1,5 +1,5 @@
 ---
-title: personal development environment
+title: Personal Development Environment
 pubDate: 2024-08-10
 description: Yet another developer talking about his development environment
 ---

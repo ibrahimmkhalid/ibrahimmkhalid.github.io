@@ -8,7 +8,7 @@ Ahem...
 
 > Hello World!
 
-\*Look, he said the thing\*
+*\*Look, he said the thing\**
 
 ...
 
