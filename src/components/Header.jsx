@@ -36,8 +36,9 @@ return (<div className="sticky top-0 z-10">
     {isBlog ? null : (
       <>
         <nav className="ml-auto hidden gap-4 sm:gap-6 md:flex">
-          {tabs.map(tab => (
+          {tabs.map((tab, idx) => (
             <span
+              key={idx}
               className="font-medium underline-offset-4 hover:underline"
               style={{cursor: "pointer"}}
               onClick={() =>
