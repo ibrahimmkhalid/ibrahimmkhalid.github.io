@@ -10,7 +10,7 @@ import "./tailwind.config.js"
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://ibrahimkhalid.me',
   integrations: [mdx(), sitemap(), react()],
 
   vite: {
