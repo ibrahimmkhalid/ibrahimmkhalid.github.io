@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.jsx';
+import FormattedDate from '../components/FormattedDate.astro';
+import { SITE_TITLE } from '../consts.ts'
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+    <BaseHead title={`${title} | ${SITE_TITLE}`} description={description} />
+	</head>
+	<body>
+		<Header client:load isBlog/>
+    <div class="flex flex-col">
+		<main class="blogpost flex flex-col items-center px-4">
+			<section class="mx-2 w-full py-12 md:mx-0 md:w-3/5 md:py-24 lg:w-2/5">
+      <h1># {title}</h1>
+        <div>
+          <FormattedDate date={pubDate} />
+          {
+            updatedDate && (
+              <div class="italic">
+                Last updated on <FormattedDate date={updatedDate} />
+              </div>
+            )
+          }
+        </div>
+        <hr/>
+      <div>
+        <slot />
+      </div>
+			</section>
+		</main>
+    </div>
+	</body>
+</html>

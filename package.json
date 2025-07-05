@@ -1,19 +1,25 @@
 {
   "scripts": {
-    "build": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css && npx nakedjsx src --out public",
-    "build:watch:css": "npx tailwindcss -i ./src/tailwind.css -o ./public/styles.css --watch",
-    "build:watch:nakedjsx": "npx nakedjsx src --out public --dev --pretty",
-    "convert": "node ./scripts/md-to-html.js",
-    "serve": "browser-sync start -s public -f . --no-notify",
-    "start": "concurrently \"npm run build:watch:css\" \"npm run build:watch:nakedjsx\" \"npm run serve\""
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "devDependencies": {
-    "browser-sync": "^3.0.2",
-    "concurrently": "^8.2.2",
-    "nakedjsx": "^0.14.6",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "showdown": "^2.1.0",
-    "tailwindcss": "^3.4.4"
+  "dependencies": {
+    "@astrojs/mdx": "^4.3.0",
+    "@astrojs/react": "^4.3.0",
+    "@astrojs/rss": "^4.0.12",
+    "@astrojs/sitemap": "^3.4.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "astro": "^5.9.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sharp": "^0.34.2",
+    "tailwindcss": "^4.1.11"
   }
 }

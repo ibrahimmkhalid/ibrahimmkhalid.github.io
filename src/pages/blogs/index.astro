@@ -1,0 +1,21 @@
+---
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.jsx';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
+import Blogs from '../../components/sections/blogs.astro'
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header client:load isBlog/>
+        <main class="flex flex-col items-center px-4">
+          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="recent-blogs">
+        <Blogs/>
+			</section>
+		</main>
+	</body>
+</html>
