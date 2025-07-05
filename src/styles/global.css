@@ -1,81 +1,83 @@
 @import "tailwindcss";
 
 .blogpost h1 {
-  @apply my-2 text-4xl font-bold underline
+  @apply my-2 text-4xl font-bold underline;
 }
 
 .blogpost h2 {
-  @apply my-2 text-3xl font-bold underline
+  @apply my-2 text-3xl font-bold underline;
 }
 
 .blogpost h3 {
-  @apply my-1 text-2xl font-bold underline
+  @apply my-1 text-2xl font-bold underline;
 }
 
 .blogpost h4 {
-  @apply my-1 text-xl font-bold underline
+  @apply my-1 text-xl font-bold underline;
 }
 
 .blogpost h5 {
-  @apply my-1 text-lg font-bold underline
+  @apply my-1 text-lg font-bold underline;
 }
 
 .blogpost h6 {
-  @apply my-0.5  font-bold underline
+  @apply my-0.5 font-bold underline;
 }
 
 .blogpost hr {
-  @apply h-1 my-4 bg-gray-100 border-0 rounded
+  @apply my-4 h-1 rounded border-0 bg-gray-100;
 }
 
 .blogpost ol {
-  @apply list-decimal
+  @apply list-decimal;
 }
 
 .blogpost p {
-  @apply py-2
+  @apply py-2;
 }
 
 .blogpost a {
-  @apply underline hover:text-blue-800
+  @apply underline hover:text-blue-800;
 }
 
 .blogpost li {
-  @apply ml-8
+  @apply ml-8;
 }
 
 .blogpost blockquote {
-  @apply border-l-black border-l-4 pl-6 pr-3 py-1 bg-gray-200 rounded-r-lg
+  @apply rounded-r-lg border-l-4 border-l-black bg-gray-200 py-1 pr-3 pl-6;
 }
 
 .blogpost code {
-  @apply px-1 bg-gray-200 rounded-xs
+  @apply rounded-xs bg-gray-200 px-1;
 }
 
 .blogpost pre {
-  @apply p-4 bg-gray-200 rounded-lg
+  @apply rounded-lg bg-gray-200 p-4;
 }
 
 .blogpost pre > code {
-	all: unset;
+  all: unset;
 }
 
 .blogpost strong {
-  @apply font-bold
+  @apply font-bold;
 }
 
 .blogpost ul {
-  @apply list-disc
+  @apply list-disc;
 }
 
 .blogpost table {
-  @apply w-full
+  @apply w-full;
 }
 
-.blogpost table, th, td {
-  @apply border border-gray-200 p-2 border-collapse text-left
+.blogpost table,
+th,
+td {
+  @apply border-collapse border border-gray-200 p-2 text-left;
 }
 
 .blogpost img {
-  @apply max-w-full rounded-xs shadow my-2 border border-gray-200 p-2
+  @apply my-2 max-w-full rounded-xs border border-gray-200 p-2 shadow;
 }

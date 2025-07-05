@@ -20,36 +20,28 @@ export default function BurgerMenu({ tabs }) {
 
   return (
     <>
-      <div
-        className="flex hover:cursor-pointer"
-        id="burger-menu-button"
-        onClick={() => setOpen((v) => !v)}
-      >
-      <FontAwesomeIcon icon={faBars} style={{width: "1em", height: "1em", color: "black"}}/> 
+      <div className="flex hover:cursor-pointer" id="burger-menu-button" onClick={() => setOpen((v) => !v)}>
+        <FontAwesomeIcon icon={faBars} style={{ width: "1em", height: "1em", color: "black" }} />
       </div>
       {open && (
         <div
-          className="absolute left-0 top-0 z-30 h-full w-full flex flex-col items-center justify-center bg-white"
+          className="absolute top-0 left-0 z-30 flex h-full w-full flex-col items-center justify-center bg-white"
           style={{ height: "100vh", width: "100vw" }}
           id="burger-menu"
         >
-          <div
-            className="absolute right-0 top-0 mx-4 my-4 hover:cursor-pointer"
-            onClick={() => setOpen(false)}
-          >
-          <FontAwesomeIcon icon={faTimes} style={{width: "1em", height: "1em", color: "black"}}/> 
+          <div className="absolute top-0 right-0 mx-4 my-4 hover:cursor-pointer" onClick={() => setOpen(false)}>
+            <FontAwesomeIcon icon={faTimes} style={{ width: "1em", height: "1em", color: "black" }} />
           </div>
           {tabs.map((tab) => (
-            <Button key={tab.id}
-                style={{ cursor: "pointer" }}
-                onClick={() => {
-                  setOpen(false);
-                  document
-                    .getElementById(tab.id)
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                {tab.name}
+            <Button
+              key={tab.id}
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                setOpen(false);
+                document.getElementById(tab.id)?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              {tab.name}
             </Button>
           ))}
         </div>

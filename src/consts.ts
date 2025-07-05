@@ -1,5 +1,5 @@
-export const SITE_TITLE = 'Ibrahim Khalid';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+export const SITE_TITLE = "Ibrahim Khalid";
+export const SITE_DESCRIPTION = "Welcome to my website!";
 
 interface ResumeEntry {
   title: string;
@@ -19,7 +19,7 @@ interface ProjectEntry {
   image?: {
     link: string;
     alt: string;
-  }
+  };
   link: string;
 }
 
@@ -84,9 +84,9 @@ export const projects: ProjectEntry[] = [
   {
     title: "Obstacle detection for drone flight path",
     body: "End to end computer vision web platform with a focus on creating models for use in camera-equipped drones",
-    image:{
+    image: {
       link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzqJAqidPGQyVWODFxcg1i3nNrlBRYf69KhaA2",
-      alt:"Obstacle detection for drone flight path",
+      alt: "Obstacle detection for drone flight path",
     },
     buttons: ["Convolutional Neural Networks", "Ultralytics", "AWS", "Next.js"],
     link: "https://sjsu-msda-f24-team6-webportal.vercel.app/",
@@ -95,9 +95,9 @@ export const projects: ProjectEntry[] = [
     title: "Comic book face generator",
     body: "Using StyleGAN deep learning model to generate faces trained on a dataset of 10,000 images",
     buttons: ["Deep Learning", "PyTorch", "Convolutional Neural Networks"],
-    image:{
+    image: {
       link: "https://raw.githubusercontent.com/ibrahimmkhalid/stylegan-pytorch/refs/heads/main/assets/sample.png",
-      alt:"Comic book face generator | Shows performance graphs and compare real/generated faces",
+      alt: "Comic book face generator | Shows performance graphs and compare real/generated faces",
     },
     link: "https://github.com/ibrahimmkhalid/stylegan-pytorch",
   },
@@ -105,9 +105,9 @@ export const projects: ProjectEntry[] = [
     title: "Portfolio",
     body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
     buttons: ["React", "TailwindCSS"],
-    image:{
+    image: {
       link: "https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png",
-      alt:"A screenshot of this website",
+      alt: "A screenshot of this website",
     },
     link: "https://ibrahimkhalid.me",
   },
@@ -115,9 +115,9 @@ export const projects: ProjectEntry[] = [
     title: "Video game trend report",
     body: "A brief report on the trends in video games over the last 40 years",
     buttons: ["Django", "HTMX"],
-    image:{
+    image: {
       link: "https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png",
-      alt:"Video game trend report graph of number of games released over time with some projections into the future",
+      alt: "Video game trend report graph of number of games released over time with some projections into the future",
     },
     link: "https://django-video-games-report-s13lc.kinsta.app",
   },
@@ -125,9 +125,9 @@ export const projects: ProjectEntry[] = [
     title: "IBKBD",
     body: "Ergonomic keyboards designed and developed by me for my needs. MX wired for desktop use, choc wireless for on the go.",
     buttons: ["Circuit Design"],
-    image:{
+    image: {
       link: "https://utfs.io/f/e96d2b18-80a9-4b74-a826-46b2179e9b75-1nj8s4.jpg",
-      alt:"Both keyboards displayed",
+      alt: "Both keyboards displayed",
     },
     link: "https://github.com/ibrahimmkhalid/ibkbd",
   },
@@ -135,9 +135,9 @@ export const projects: ProjectEntry[] = [
     title: "Fast network threat detection model",
     body: "An investigation into which model is best at accurate and quick detection of known and novel network anomalies",
     buttons: ["Machine Learning", "Python"],
-    image:{
+    image: {
       link: "https://utfs.io/f/f5c5c355-0ad9-421c-84b4-b89fcae68fb4-tka03.png",
-      alt:"Fast network threat detection model architecture diagram",
+      alt: "Fast network threat detection model architecture diagram",
     },
     link: "https://github.com/ibrahimmkhalid/data-245-project",
   },
@@ -151,9 +151,9 @@ export const projects: ProjectEntry[] = [
     title: "Shopping application full stack in PyQT",
     body: "Multi user shopping application client and server. Includes administrator and customer view",
     buttons: ["PyQT", "MySQL"],
-    image:{
+    image: {
       link: "https://utfs.io/f/efe43b4d-924b-471c-a3c9-80e29d2ccb5b-1z9hq2.png",
-      alt:"A screenshot of the application",
+      alt: "A screenshot of the application",
     },
     link: "https://github.com/ibrahimmkhalid/shopping-application-pyqt",
   },
