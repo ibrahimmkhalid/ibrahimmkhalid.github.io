@@ -2,14 +2,12 @@
 import { projects } from "../../consts.js";
 import { Project } from "../project.jsx";
 
-const even = projects.filter((_, idx) => idx % 2 === 0);
-const odd = projects.filter((_, idx) => idx % 2 !== 0);
 ---
-<h1 class="text-2xl font-bold">Projects</h1>
+<h1 class="text-2xl font-bold mb-2">Projects</h1>
 <h2 class="pb-4 text-xl text-gray-600">Showcasing my skills</h2>
-<div class="grid w-full grid-cols-1 gap-0 2xl:grid-cols-2 2xl:gap-4">
-  <div class="space-y-4">
-    {even.map((project) => (
+<div class="columns-1 2xl:columns-2 gap-6">
+  {projects.map((project) => (
+    <div class="break-inside-avoid inline-block w-full my-1">
       <Project
         title={project.title}
         body={project.body}
@@ -17,17 +15,6 @@ const odd = projects.filter((_, idx) => idx % 2 !== 0);
         image={project.image}
         link={project.link}
       />
-    ))}
-  </div>
-  <div class="space-y-4">
-    {odd.map((project) => (
-      <Project
-        title={project.title}
-        body={project.body}
-        buttons={project.buttons}
-        image={project.image}
-        link={project.link}
-      />
-    ))}
-  </div>
+    </div>
+  ))}
 </div>
