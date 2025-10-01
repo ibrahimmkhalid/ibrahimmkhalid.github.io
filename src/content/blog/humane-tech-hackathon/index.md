@@ -66,7 +66,7 @@ by the frontend.
 
 Gisela worked on the frontend, making sure that the user was able to navigate
 the page with ease. React was used for the frontend along with tailwind for
-styling. The app was hosted on vercel.
+styling. The app was hosted using a readily available hosting platform.
 
 Amarpreet was the main source of political knowledge for our application,
 giving us the insights and performing the research needed so that we were on

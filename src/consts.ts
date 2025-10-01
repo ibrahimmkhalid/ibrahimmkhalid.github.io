@@ -89,7 +89,7 @@ export const projects: ProjectEntry[] = [
       alt: "Obstacle detection for drone flight path",
     },
     buttons: ["Convolutional Neural Networks", "Ultralytics", "AWS", "Next.js"],
-    link: "https://sjsu-msda-f24-team6-webportal.vercel.app/",
+    link: "https://sjsu-msda-f24-team6-webportal.netlify.app/",
   },
   {
     title: "Comic book face generator",

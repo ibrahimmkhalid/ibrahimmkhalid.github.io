@@ -14,11 +14,11 @@ as it is quick and easy to deploy.
 
 - CMS platform such as SquareSpace, WordPress, etc.
 - Static site generation using development kits such as Next.JS, this requires
-  its own hosting, such as Vercel.
+  its own hosting, such as Netlify.
 - Static site generation using markdown and Jekyll, hosted on GitHub.
 
 The simplest one for me was using Jekyll with GitHub. But it was not very fun.
-I could have gone towards Next.JS SSG with hosting on Vercel, but I
+I could have gone towards Next.JS SSG with hosting on Netlify, but I
 skill-issued my self hard and decided to hack together a weird solution using
 some random JavaScript libraries. I will probably re-write this site in the
 future using an \*ackshual\* platform.

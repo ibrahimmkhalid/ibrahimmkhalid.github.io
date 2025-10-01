@@ -26,7 +26,7 @@ I mentioned that I would make the link to our project live after completion.
 Well, it is now done, so here is the
 [link](https://github.com/sjsu2024-data298-team6/) to the team page with all
 the relevant repositories. You can visit
-[this](https://sjsu-msda-f24-team6-webportal.vercel.app/) link to see more
+[this](https://sjsu-msda-f24-team6-webportal.netlify.app/) link to see more
 information about the project technicalities.
 
 Though the application of the project is quite broad, it began as a system
