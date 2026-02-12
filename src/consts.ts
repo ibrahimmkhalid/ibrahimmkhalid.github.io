@@ -1,6 +1,23 @@
 export const SITE_TITLE = "Ibrahim Khalid";
 export const SITE_DESCRIPTION = "Welcome to my website!";
 
+export const PROFILE = {
+  name: "Ibrahim Khalid",
+  role: "Software Engineer",
+  location: "San Francisco Bay Area",
+  blurb:
+    "I hold a master's degree in Data Analytics from San Jose State University, where I developed a strong foundation in software engineering alongside emerging machine learning and AI technologies. I am currently seeking software engineering positions across a variety of disciplines, including web development, tool development, and machine learning/AI engineering.",
+  quickLinks: [
+    {
+      name: "Resume",
+      href: "https://drive.google.com/file/d/19qmTRpP0RprfNma2gAVtgAg8XbIYtNOv/view?usp=drive_link",
+    },
+    { name: "GitHub", href: "https://github.com/ibrahimmkhalid" },
+    { name: "LinkedIn", href: "https://linkedin.com/in/ibrahimmkhalid" },
+    { name: "Email", href: "mailto:ibrahimmkhalid@gmail.com" },
+  ],
+} as const;
+
 interface ResumeEntry {
   title: string;
   where: string;
