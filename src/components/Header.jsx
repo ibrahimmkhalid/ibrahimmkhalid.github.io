@@ -1,4 +1,3 @@
-import BurgerMenu from "./BurgerMenu.jsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
@@ -48,9 +47,6 @@ export default function Header() {
               </span>
             ))}
           </nav>
-          <div className="ml-auto gap-4 sm:gap-6 md:hidden">
-            <BurgerMenu tabs={tabs} />
-          </div>
         </>
       </header>
       <hr className="border-t border-gray-200" />
