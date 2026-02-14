@@ -31,36 +31,38 @@ var firstQuickLink = true;
               </div>
             </>
           )}
-          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5">
-            <h1 class="text-4xl font-bold">{PROFILE.name}</h1>
-            <h2 class="pb-4 text-xl text-gray-600">{PROFILE.role} // {PROFILE.location}</h2>
-            <p class="text-lg">{PROFILE.blurb}</p>
-            <div class="flex flex-col pt-4 md:grid md:grid-cols-4">
-              {PROFILE.quickLinks.map((l) => {
-                var btnClass = "h-10 w-full items-center justify-center rounded-md border-gray-200 border px-4 py-2 text-center";
-                if (firstQuickLink) {
-                  btnClass = btnClass + " bg-black text-white";
-                  firstQuickLink = false;
-                }
-                return (
-                  <div class="mx-0 my-1 md:mx-1 md:my-0">
-                    <a href={l.link} target="_blank">
-                      <p class={btnClass}>{l.name}</p>
-                    </a>
-                  </div>
-                );
-              })}
-            </div>
-          </section>
-          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="experience">
-            <Entry section="experience" />
-          </section>
-          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="education">
-            <Entry section="education" />
-          </section>
-          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="projects">
-            <Projects />
-          </section>
+          <div class="w-full lg:w-7/12">
+            <section class="mx-2 py-6 md:mx-0 md:py-12">
+              <h1 class="text-4xl font-bold">{PROFILE.name}</h1>
+              <h2 class="pb-4 text-xl text-gray-600">{PROFILE.role} // {PROFILE.location}</h2>
+              <p class="text-lg">{PROFILE.blurb}</p>
+              <div class="flex flex-col pt-4 md:grid md:grid-cols-4">
+                {PROFILE.quickLinks.map((l) => {
+                  var btnClass = "h-10 w-full items-center justify-center rounded-md border-gray-200 border px-4 py-2 text-center";
+                  if (firstQuickLink) {
+                    btnClass = btnClass + " bg-black text-white";
+                    firstQuickLink = false;
+                  }
+                  return (
+                    <div class="mx-0 my-1 md:mx-1 md:my-0">
+                      <a href={l.link} target="_blank">
+                        <p class={btnClass}>{l.name}</p>
+                      </a>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+            <section class="mx-2 py-6 md:mx-0 md:py-12" id="experience">
+              <Entry section="experience" />
+            </section>
+            <section class="mx-2 py-6 md:mx-0 md:py-12" id="education">
+              <Entry section="education" />
+            </section>
+            <section class="mx-2 py-6 md:mx-0 md:py-12" id="projects">
+              <Projects />
+            </section>
+          </div>
         </main>
       </div>
 	</body>

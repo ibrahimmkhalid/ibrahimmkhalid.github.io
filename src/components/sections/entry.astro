@@ -34,9 +34,7 @@ if (section === "education") {
     {contentItems.map((item) => (
       <div>
         <div class="text-xl">
-          <span class="font-bold">{item.title}</span><span class="font-thin">,
-            {item.where} ({item.from} to {item.to})
-          </span>
+          <span class="font-bold">{item.title}</span><span>, {item.where} ({item.from} to {item.to})</span>
         </div>
         <div class="flex h-full w-full flex-wrap py-2">
           {item.topSkills.map((p) => (
