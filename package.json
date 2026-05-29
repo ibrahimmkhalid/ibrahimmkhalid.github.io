@@ -32,7 +32,6 @@
     "smol-toml": "^1.6.1",
     "picomatch": "^4.0.4",
     "defu": "^6.1.5",
-    "vite": "^6.4.2",
     "fast-xml-builder": "^1.1.7",
     "devalue": "^5.8.1",
     "postcss": "^8.5.10"

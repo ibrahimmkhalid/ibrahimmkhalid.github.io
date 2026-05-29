@@ -1,11 +1,11 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import Projects from '../components/sections/projects.jsx'
 import Header from '../components/Header.jsx';
-import Blogs from '../components/sections/blogs.astro'
 import Entry from '../components/sections/entry.astro'
 import Projects from '../components/sections/projects.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, PROFILE } from '../consts';
+
+export const prerender = true;
 
 const isBuild = false
 
