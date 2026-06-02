@@ -70,6 +70,7 @@ export const experiences: ResumeEntry[] = [
     to: "Aug 2019",
     topSkills: ["C++", "Windows APIs"],
     short: "Studied cybersecurity and engineered a C++ windows firewall application using WFP API libraries",
+    links: ["ebryx.com"],
     points: [
       "Covered 1500+ possible configurations for firewall on basis of port, IP address, direction, or application",
       "Completed project 1.5 weeks ahead of schedule, allowing further refinements based on feedback from team lead",
@@ -84,7 +85,7 @@ export const education: ResumeEntry[] = [
     where: "San Jose State University",
     from: "Fall 2023",
     to: "Spring 2025",
-    topSkills: ["Python", "Data Analytics", "Machine Learning"],
+    topSkills: ["Python", "Data Analytics", "Machine Learning", "Artificial Intelligence", "LLM"],
     links: ["sjsu.edu"],
   },
   {
@@ -173,5 +174,37 @@ export const projects: ProjectEntry[] = [
       alt: "A screenshot of the application",
     },
     link: "https://github.com/ibrahimmkhalid/shopping-application-pyqt",
+  },
+  {
+    title: "Investigating renewable energy production",
+    body: "Using multiple regression analysis methods to predict future wind and solar energy production",
+    buttons: ["Regression", "Python", "Machine Learning"],
+    image: {
+      link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzU2edGsF0W2qBxXgeP3hrwm9AiM6b8Vc4FDQR",
+      alt: "Shows a graph of the results for some of the models used",
+    },
+    link: "https://github.com/ibrahimmkhalid/data-228-project",
+  },
+  {
+    title: "Amazon product review sentiment analysis report",
+    body: "Course work report for a multi-class sentiment classification of 700k+ Amazon reviews comparing different algorithms",
+    buttons: ["Sentiment Analysis", "Big Data", "NLP"],
+    image: {
+      link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzCK1REvx39BJf1K5hFlSWipIXzEy6edHrYZ2j",
+      alt: "NLP and Sentiment analysis model architecture diagram",
+    },
+    link: "https://drive.google.com/file/d/1MMgF231LdLcNiDOLrb1jF6uM9NYGOucm/view",
+  },
+  {
+    title: "Large Language Model from Scratch",
+    body: "Character-level GPT language model built from scratch using PyTorch, implementing multi-head self-attention, transformer blocks, and trained on OpenWebText Corpus",
+    buttons: ["LLM", "Python", "PyTorch"],
+    link: "https://huggingface.co/spaces/ibrahimmkhalid/llm-from-scratch",
+  },
+  {
+    title: "Embedded indoor agriculture system",
+    body: "Automated indoor vertical farming system with mobile app control built on microcontrollers for managing local environment",
+    buttons: ["Microcontroller", "Feedback controls", "Circuit Design", "Cloud enabled"],
+    link: "https://github.com/ibrahimmkhalid/capstone-project-pharmer",
   },
 ];
