@@ -9,10 +9,10 @@ const tabs = [
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-10">
-      <header className="flex h-14 items-center bg-white px-4 lg:px-6" id="#">
+    <div className="sticky top-0 z-10 w-full overflow-x-hidden border-b border-gray-200 bg-white/95 backdrop-blur">
+      <header className="mx-auto flex min-h-14 max-w-6xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:px-6" id="#">
         <span
-          className="items-center font-medium underline-offset-4 hover:underline"
+          className="shrink-0 items-center font-medium underline-offset-4 hover:underline"
           style={{ cursor: "pointer" }}
           onClick={() => {
             if (window.location.pathname !== "/") {
@@ -28,11 +28,11 @@ export default function Header() {
           </span>
         </span>
         <>
-          <nav className="ml-auto hidden gap-4 sm:gap-6 md:flex">
+          <nav className="flex min-w-0 w-full gap-4 overflow-x-auto whitespace-nowrap text-sm text-gray-700 sm:gap-6 md:ml-auto md:w-auto md:text-base">
             {tabs.map((tab, idx) => (
               <span
                 key={idx}
-                className="font-medium underline-offset-4 hover:underline"
+                className="font-medium underline-offset-4 hover:text-black hover:underline"
                 style={{ cursor: "pointer" }}
                 onClick={() => {
                   if (window.location.pathname !== "/") {
@@ -49,7 +49,6 @@ export default function Header() {
           </nav>
         </>
       </header>
-      <hr className="border-t border-gray-200" />
     </div>
   );
 }

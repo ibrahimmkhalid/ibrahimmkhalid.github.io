@@ -21,7 +21,7 @@ var firstQuickLink = true;
 	<body>
 		<Header client:load/>
       <div class="flex flex-col" id="top">
-        <main class="flex flex-col items-center px-4">
+        <main class="flex min-w-0 flex-col items-center overflow-x-hidden px-4 sm:px-6">
           {isBuild && (
             <>
               <div class="m-4 rounded-full border-8 border-red-500 p-4">
@@ -31,35 +31,35 @@ var firstQuickLink = true;
               </div>
             </>
           )}
-          <div class="w-full lg:w-7/12">
-            <section class="mx-2 py-6 md:mx-0 md:py-12">
-              <h1 class="text-4xl font-bold">{PROFILE.name}</h1>
-              <h2 class="pb-4 text-xl text-gray-600">{PROFILE.role} // {PROFILE.location}</h2>
-              <p class="text-lg">{PROFILE.blurb}</p>
-              <div class="flex flex-col pt-4 md:grid md:grid-cols-4">
+          <div class="min-w-0 w-full max-w-5xl">
+            <section class="py-8 sm:py-12 md:py-16">
+              <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">{PROFILE.name}</h1>
+              <h2 class="pb-5 pt-1 text-lg text-gray-600 sm:text-xl">{PROFILE.role} // {PROFILE.location}</h2>
+              <p class="max-w-3xl text-base leading-7 sm:text-lg">{PROFILE.blurb}</p>
+              <div class="grid grid-cols-2 gap-2 pt-5 sm:grid-cols-4">
                 {PROFILE.quickLinks.map((l) => {
-                  var btnClass = "h-10 w-full items-center justify-center rounded-md border-gray-200 border px-4 py-2 text-center";
+                  var btnClass = "flex min-h-10 w-full items-center justify-center rounded-md border border-gray-200 px-4 py-2 text-center text-sm font-medium transition hover:border-gray-400 sm:text-base";
                   if (firstQuickLink) {
                     btnClass = btnClass + " bg-black text-white";
                     firstQuickLink = false;
                   }
                   return (
-                    <div class="mx-0 my-1 md:mx-1 md:my-0">
-                      <a href={l.href} target="_blank">
-                        <p class={btnClass}>{l.name}</p>
+                    <div>
+                      <a class="block" href={l.href} target="_blank">
+                        <span class={btnClass}>{l.name}</span>
                       </a>
                     </div>
                   );
                 })}
               </div>
             </section>
-            <section class="mx-2 py-6 md:mx-0 md:py-12" id="experience">
+            <section class="py-8 md:py-12" id="experience">
               <Entry section="experience" />
             </section>
-            <section class="mx-2 py-6 md:mx-0 md:py-12" id="education">
+            <section class="py-8 md:py-12" id="education">
               <Entry section="education" />
             </section>
-            <section class="mx-2 py-6 md:mx-0 md:py-12" id="projects">
+            <section class="py-8 md:py-12" id="projects">
               <Projects />
             </section>
           </div>

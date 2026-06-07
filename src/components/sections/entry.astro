@@ -27,16 +27,19 @@ if (section === "education") {
 
 
 ---
-<h1 class="text-2xl font-bold">{sectionTitle}</h1>
-<h2 class="pb-4 text-xl text-gray-600">{sectionTagline}</h2>
-<div class="flex flex-col gap-2 text-lg">
-  <div class="space-y-5">
+<div class="mb-5">
+  <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{sectionTitle}</h1>
+  <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">{sectionTagline}</h2>
+</div>
+<div class="flex min-w-0 flex-col gap-2 text-base leading-7 sm:text-lg">
+  <div class="space-y-6">
     {contentItems.map((item) => (
-      <div>
-        <div class="text-xl">
-          <span class="font-bold">{item.title}</span><span>, {item.where} ({item.from} to {item.to})</span>
+      <article class="min-w-0 overflow-hidden border-t border-gray-200 pt-5 first:border-t-0 first:pt-0">
+        <div class="flex flex-col gap-1 text-lg sm:text-xl md:flex-row md:flex-wrap md:items-baseline">
+          <span class="font-bold">{item.title}</span>
+          <span class="text-gray-700 md:pl-1">{item.where} ({item.from} to {item.to})</span>
         </div>
-        <div class="flex h-full w-full flex-wrap py-2">
+        <div class="flex h-full min-w-0 w-full flex-wrap py-3">
           {item.topSkills.map((p) => (
             <Button>{p}</Button>
           ))}
@@ -50,18 +53,18 @@ if (section === "education") {
               </Button>
             ))}
         </div>
-        {item.short && <span>{item.short}</span>}
+        {item.short && <p>{item.short}</p>}
         {item.points && (
           <>
-            <ul class="list-disc space-y-0">
+            <ul class="list-disc space-y-1 pt-2">
               {item.points.map((p) => (
-                <li class="ml-8">{p}</li>
+                <li class="ml-5 sm:ml-8">{p}</li>
               ))}
             </ul>
           </>
         )}
-        <p class="text-md">{item.tagline}</p>
-      </div>
+        <p>{item.tagline}</p>
+      </article>
     ))}
   </div>
 </div>

@@ -14,8 +14,8 @@ export const prerender = true;
 	</head>
 	<body>
 		<Header client:load isBlog/>
-        <main class="flex flex-col items-center px-4">
-          <section class="mx-2 w-full py-6 md:mx-0 md:w-3/5 md:py-12 lg:w-2/5" id="recent-blogs">
+        <main class="flex min-w-0 flex-col items-center overflow-x-hidden px-4 sm:px-6">
+          <section class="w-full max-w-3xl py-8 md:py-12" id="recent-blogs">
         <Blogs/>
 			</section>
 		</main>

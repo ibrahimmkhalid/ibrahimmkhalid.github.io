@@ -1,7 +1,7 @@
 export default function Button({ children, onClick }) {
   return (
     <button
-      className="mx-2 my-1 h-10 items-center justify-center rounded-md border-black bg-black px-4 py-2 text-white"
+      className="my-1 mr-2 inline-flex min-h-9 max-w-full items-center justify-center rounded-md border border-black bg-black px-3 py-1.5 text-sm leading-tight whitespace-normal break-words text-white sm:px-4"
       onClick={onClick || (() => {})}
     >
       {children}
