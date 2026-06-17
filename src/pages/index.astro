@@ -31,12 +31,14 @@ var firstQuickLink = true;
               </div>
             </>
           )}
-          <div class="min-w-0 w-full max-w-5xl">
-            <section class="py-8 sm:py-12 md:py-16">
-              <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">{PROFILE.name}</h1>
-              <h2 class="pb-5 pt-1 text-lg text-gray-600 sm:text-xl">{PROFILE.role} // {PROFILE.location}</h2>
-              <p class="max-w-3xl text-base leading-7 sm:text-lg">{PROFILE.blurb}</p>
-              <div class="grid grid-cols-2 gap-2 pt-5 sm:grid-cols-4">
+          <div class="min-w-0 w-full max-w-5xl space-y-8 pt-8 pb-8 md:space-y-12 md:pt-12 md:pb-12">
+            <section>
+              <div class="mb-5">
+                <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">{PROFILE.name}</h1>
+                <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">{PROFILE.role} · {PROFILE.location}</h2>
+              </div>
+              <p class="text-base leading-7 sm:text-lg">{PROFILE.blurb}</p>
+              <div class="grid grid-cols-2 gap-2 pt-4 sm:grid-cols-4">
                 {PROFILE.quickLinks.map((l) => {
                   var btnClass = "flex min-h-10 w-full items-center justify-center rounded-md border border-gray-200 px-4 py-2 text-center text-sm font-medium transition hover:border-gray-400 sm:text-base";
                   if (firstQuickLink) {
@@ -53,13 +55,13 @@ var firstQuickLink = true;
                 })}
               </div>
             </section>
-            <section class="py-8 md:py-12" id="experience">
+            <section id="experience">
               <Entry section="experience" />
             </section>
-            <section class="py-8 md:py-12" id="education">
+            <section id="education">
               <Entry section="education" />
             </section>
-            <section class="py-8 md:py-12" id="projects">
+            <section id="projects">
               <Projects />
             </section>
           </div>
