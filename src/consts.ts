@@ -29,9 +29,13 @@ interface ResumeEntry {
   points?: string[];
 }
 
+export const PROJECT_CATEGORIES = ["AI", "Web", "Systems", "Data"] as const;
+export type ProjectCategory = (typeof PROJECT_CATEGORIES)[number];
+
 interface ProjectEntry {
   title: string;
   body: string;
+  categories: ProjectCategory[];
   buttons: string[];
   image?: {
     link: string;
@@ -106,12 +110,14 @@ export const projects: ProjectEntry[] = [
       link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzqJAqidPGQyVWODFxcg1i3nNrlBRYf69KhaA2",
       alt: "Obstacle detection for drone flight path",
     },
+    categories: ["AI", "Web"],
     buttons: ["Convolutional Neural Networks", "Ultralytics", "AWS", "Next.js"],
     link: "https://sjsu-msda-f24-team6-webportal.netlify.app/",
   },
   {
     title: "Comic book face generator",
     body: "Using StyleGAN deep learning model to generate faces trained on a dataset of 10,000 images",
+    categories: ["AI"],
     buttons: ["Deep Learning", "PyTorch", "Convolutional Neural Networks"],
     image: {
       link: "https://raw.githubusercontent.com/ibrahimmkhalid/stylegan-pytorch/refs/heads/main/assets/sample.png",
@@ -122,6 +128,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Portfolio",
     body: "A personal website that showcases my work, experience, socials, resume, and also hosts my blogs",
+    categories: ["Web"],
     buttons: ["React", "TailwindCSS"],
     image: {
       link: "https://utfs.io/f/a16bbc8f-b47f-44ee-ae01-82c02e04ea18-ijvnt4.png",
@@ -132,6 +139,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Video game trend report",
     body: "A brief report on the trends in video games over the last 40 years",
+    categories: ["Web", "Data"],
     buttons: ["Django", "HTMX"],
     image: {
       link: "https://utfs.io/f/ce42f155-b39a-45b8-8050-ab2685e5b568-m0jdt1.png",
@@ -142,6 +150,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "IBKBD",
     body: "Ergonomic keyboards designed and developed by me for my needs. MX wired for desktop use, choc wireless for on the go.",
+    categories: ["Systems"],
     buttons: ["Circuit Design"],
     image: {
       link: "https://utfs.io/f/e96d2b18-80a9-4b74-a826-46b2179e9b75-1nj8s4.jpg",
@@ -152,6 +161,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Fast network threat detection model",
     body: "An investigation into which model is best at accurate and quick detection of known and novel network anomalies",
+    categories: ["AI", "Data", "Systems"],
     buttons: ["Machine Learning", "Python"],
     image: {
       link: "https://utfs.io/f/f5c5c355-0ad9-421c-84b4-b89fcae68fb4-tka03.png",
@@ -162,12 +172,14 @@ export const projects: ProjectEntry[] = [
   {
     title: "HTTP Server in GoLang",
     body: "A simple web server communicating over HTTP to serve some predefined endpoints. Based on CodeCrafters build",
+    categories: ["Systems", "Web"],
     buttons: ["GoLang", "HTTP"],
     link: "https://github.com/ibrahimmkhalid/http-server-go",
   },
   {
     title: "Shopping application full stack in PyQT",
     body: "Multi user shopping application client and server. Includes administrator and customer view",
+    categories: ["Systems", "Data"],
     buttons: ["PyQT", "MySQL"],
     image: {
       link: "https://utfs.io/f/efe43b4d-924b-471c-a3c9-80e29d2ccb5b-1z9hq2.png",
@@ -178,6 +190,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Investigating renewable energy production",
     body: "Using multiple regression analysis methods to predict future wind and solar energy production",
+    categories: ["AI", "Data"],
     buttons: ["Regression", "Python", "Machine Learning"],
     image: {
       link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzU2edGsF0W2qBxXgeP3hrwm9AiM6b8Vc4FDQR",
@@ -188,6 +201,7 @@ export const projects: ProjectEntry[] = [
   {
     title: "Amazon product review sentiment analysis report",
     body: "Course work report for a multi-class sentiment classification of 700k+ Amazon reviews comparing different algorithms",
+    categories: ["AI", "Data"],
     buttons: ["Sentiment Analysis", "Big Data", "NLP"],
     image: {
       link: "https://nhlswcz663.ufs.sh/f/XSbHnEIqVcDzCK1REvx39BJf1K5hFlSWipIXzEy6edHrYZ2j",
@@ -198,12 +212,14 @@ export const projects: ProjectEntry[] = [
   {
     title: "Large Language Model from Scratch",
     body: "Character-level GPT language model built from scratch using PyTorch, implementing multi-head self-attention, transformer blocks, and trained on OpenWebText Corpus",
+    categories: ["AI", "Data"],
     buttons: ["LLM", "Python", "PyTorch"],
     link: "https://huggingface.co/spaces/ibrahimmkhalid/llm-from-scratch",
   },
   {
     title: "Embedded indoor agriculture system",
     body: "Automated indoor vertical farming system with mobile app control built on microcontrollers for managing local environment",
+    categories: ["Systems"],
     buttons: ["Microcontroller", "Feedback controls", "Circuit Design", "Cloud enabled"],
     link: "https://github.com/ibrahimmkhalid/capstone-project-pharmer",
   },

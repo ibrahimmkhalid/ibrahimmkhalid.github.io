@@ -1,22 +1,9 @@
 ---
-import { projects } from "../../consts.js";
-import { Project } from "../project.jsx";
+import ProjectsSection from "../ProjectsSection.jsx";
 
 ---
 <div class="mb-5">
   <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">Projects</h1>
   <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">Showcasing my skills</h2>
 </div>
-<div class="min-w-0 columns-1 gap-6 xl:columns-2">
-  {projects.map((project) => (
-    <div class="my-1 inline-block w-full break-inside-avoid">
-      <Project
-        title={project.title}
-        body={project.body}
-        buttons={project.buttons}
-        image={project.image}
-        link={project.link}
-      />
-    </div>
-  ))}
-</div>
+<ProjectsSection client:load />
