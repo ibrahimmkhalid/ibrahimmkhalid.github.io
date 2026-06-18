@@ -11,16 +11,13 @@ interface Props {
 const { section = "education" } = Astro.props;
 let contentItems = undefined;
 let sectionTitle = undefined;
-let sectionTagline = undefined;
 
 if (section === "education") {
   contentItems = education;
   sectionTitle = "Education";
-  sectionTagline = "My studies over the years";
 } else {
   contentItems = experiences;
   sectionTitle = "Experience";
-  sectionTagline = "A list of my professional work experiences";
 }
 
 
@@ -29,7 +26,6 @@ if (section === "education") {
 ---
 <div class="mb-5">
   <h1 class="text-2xl font-bold tracking-tight sm:text-3xl">{sectionTitle}</h1>
-  <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">{sectionTagline}</h2>
 </div>
 <div class="flex min-w-0 flex-col gap-2 text-base leading-7 sm:text-lg">
   <div class="space-y-6">

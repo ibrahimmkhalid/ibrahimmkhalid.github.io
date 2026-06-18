@@ -35,7 +35,7 @@ var firstQuickLink = true;
             <section>
               <div class="mb-5">
                 <h1 class="text-4xl font-bold tracking-tight sm:text-5xl">{PROFILE.name}</h1>
-                <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">{PROFILE.role} · {PROFILE.location}</h2>
+                <h2 class="pt-1 text-lg text-gray-600 sm:text-xl">{PROFILE.role} // {PROFILE.location}</h2>
               </div>
               <p class="text-base leading-7 sm:text-lg">{PROFILE.blurb}</p>
               <div class="grid grid-cols-2 gap-2 pt-4 sm:grid-cols-4">
@@ -58,11 +58,11 @@ var firstQuickLink = true;
             <section id="experience">
               <Entry section="experience" />
             </section>
-            <section id="education">
-              <Entry section="education" />
-            </section>
             <section id="projects">
               <Projects />
+            </section>
+            <section id="education">
+              <Entry section="education" />
             </section>
           </div>
         </main>

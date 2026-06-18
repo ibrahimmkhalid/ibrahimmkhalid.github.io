@@ -1,12 +1,14 @@
 export const SITE_TITLE = "Ibrahim Khalid";
-export const SITE_DESCRIPTION = "Welcome to my website!";
+export const SITE_DESCRIPTION = "Ibrahim Khalid's Personal Website | Software Engineer | San Francisco Bay Area";
 
 export const PROFILE = {
   name: "Ibrahim Khalid",
   role: "Software Engineer",
   location: "San Francisco Bay Area",
+  // blurb: "I hold a master's degree in Data Analytics from San Jose State University, where I developed a strong foundation in software engineering alongside emerging machine learning and AI technologies. I am currently seeking software engineering positions across a variety of disciplines, including web development, tool development, and machine learning/AI engineering.",
+  // blurb: "Accomplished Software Engineer with a track record of elevating business needs, including a 35% uplift in sales and dropping fraudulent account creation by 80%. Specialized in web development, tool development, and machine learning/AI engineering. Seeking opportunities in these fields.",
   blurb:
-    "I hold a master's degree in Data Analytics from San Jose State University, where I developed a strong foundation in software engineering alongside emerging machine learning and AI technologies. I am currently seeking software engineering positions across a variety of disciplines, including web development, tool development, and machine learning/AI engineering.",
+    "Accomplished Software Engineer with experience in web development, tool development, and machine learning/AI engineering. Proven track record of delivering measurable business impact, including increasing sales by 35% and reducing fraudulent account creation by 85%. Currently seeking software engineering opportunities across web, tools, and AI-focused roles.",
   quickLinks: [
     {
       name: "Resume",
@@ -59,12 +61,12 @@ export const experiences: ResumeEntry[] = [
       "Automated customer verification in user signup flow, reducing abusive accounts by 85+%",
       "Developed internal tools to create time and stock limited promos on select products, increasing impulse purchases by 10%",
       "Created a REST API endpoint allowing users to subscribe to stock notifications, leading to an increase in sales by 35% QoQ",
-      "Completed over 40 software bug tickets in a timely manner on backend, web, and mobile, using unit testing for quality control",
-      "Ensured scalability and performance by optimizing queries and ensuring proper concurrency to handle high traffic efficiently",
-      "Used CI/CD to deploy all builds for apps and updated backend server using GitHub Workflow",
+      // "Completed over 40 software bug tickets in a timely manner on backend, web, and mobile, using unit testing for quality control",
+      // "Ensured scalability and performance by optimizing queries and ensuring proper concurrency to handle high traffic efficiently",
+      // "Used CI/CD to deploy all builds for apps and updated backend server using GitHub Workflow",
       "Communicated and collaborated with multiple teams across finance, design, product, and operations domains to collaborate on various features",
-      "Followed the Agile workflow for all sprints, using SOLID principles and design patterns to guide our efforts",
-      "Wrote a well documented internal docker script for new developer onboarding, saving multiple hours of configuration",
+      // "Followed the Agile workflow for all sprints, using SOLID principles and design patterns to guide our efforts",
+      // "Wrote a well documented internal docker script for new developer onboarding, saving multiple hours of configuration",
     ],
   },
   {
@@ -78,7 +80,7 @@ export const experiences: ResumeEntry[] = [
     points: [
       "Covered 1500+ possible configurations for firewall on basis of port, IP address, direction, or application",
       "Completed project 1.5 weeks ahead of schedule, allowing further refinements based on feedback from team lead",
-      "Followed modern coding procedures from designing, testing, documentation, and development",
+      // "Followed modern coding procedures from designing, testing, documentation, and development",
     ],
   },
 ];
