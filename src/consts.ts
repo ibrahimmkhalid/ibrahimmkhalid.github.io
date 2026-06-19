@@ -57,7 +57,6 @@ export const experiences: ResumeEntry[] = [
       "Maintained and developed backend APIs for a leading grocery ecommerce website. Used PHP/Laravel and MySQL to build various features leading to product improvement.",
     links: ["grocerapp.pk"],
     points: [
-      "Developed backend APIs for a leading grocery ecommerce website. Used PHP/Laravel and MySQL to build various features",
       "Automated customer verification in user signup flow, reducing abusive accounts by 85+%",
       "Developed internal tools to create time and stock limited promos on select products, increasing impulse purchases by 10%",
       "Created a REST API endpoint allowing users to subscribe to stock notifications, leading to an increase in sales by 35% QoQ",
